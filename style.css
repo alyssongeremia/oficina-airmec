@@ -1,0 +1,148 @@
+:root {
+    --bg-primary: #1D3248;
+    --bg-secundary: #F5F5F5;
+    --bg-buttons: #2C4C6E;
+
+    --ct-black: #000000;
+    --ct-primary: #1D3248;
+    --ct-secundary: #F5F5F5;
+
+    --color-selection: #FFA630;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.page {
+    width: 320px;
+    margin: auto;
+}
+
+#hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#sub-header {
+    background: var(--bg-secundary);
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#sub-header a {
+    text-decoration: none;
+    padding: 10px;
+    background: var(--bg-primary);
+    color: var(--ct-secundary);
+
+    font-weight: 500;
+
+    border-radius: 100px;
+
+    margin-right: 35px;
+}
+
+header {
+    background: var(--bg-secundary);
+    height: 7.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 99.9vw;
+    height: 100vh;
+
+    background: var(--bg-secundary);
+
+    position: absolute;
+    top: 130px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    text-align: center;
+    margin: auto;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--ct-primary);
+
+    margin-top: 3.5rem;
+
+    font-weight: 600;
+}
+
+.menu-contact {
+    background: var(--bg-primary);
+    color: var(--ct-secundary);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-contact-wrapper {
+    padding-top: 45px;
+}
+
+.menu-contact h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    padding-bottom: 3px;
+}
+
+.menu-contact p {
+    padding-bottom: 30px;
+    font-weight: normal;
+}
+
+.menu-contact a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: normal;
+
+    color: var(--ct-secundary);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
