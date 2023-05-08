@@ -71,11 +71,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+}
+
+nav svg {
+    padding-top: 8px;
 }
 
 .menu {
-    width: 99.9vw;
-    height: 100vh;
+    width: 100vw;
 
     background: var(--bg-secundary);
 
@@ -89,6 +93,8 @@ nav {
 
     text-align: center;
     margin: auto;
+
+    animation: toBotton 670ms ease-in-out;
 }
 
 .menu li {
@@ -108,17 +114,14 @@ nav {
 .menu-contact {
     background: var(--bg-primary);
     color: var(--ct-secundary);
-    height: 100%;
 
     display: flex;
     flex-direction: column;
     gap: 30px;
 
+    padding: 35px 0;
+    border-bottom: 1px solid #17283a;
     border-radius: 10px 10px 0 0;
-}
-
-.menu-contact-wrapper {
-    padding-top: 45px;
 }
 
 .menu-contact h1 {
@@ -145,4 +148,60 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 35px;
+}
+
+.about-wrapper {
+    background: var(--bg-primary);
+    color: var(--ct-secundary);
+}
+
+.about-wrapper h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+
+    padding-top: 3.5rem;
+}
+
+.location-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    padding: 3.5rem 0;
+}
+
+.location-about p {
+    font-size: 1.4rem;
+}
+
+.about-wrapper img {
+    width: 320px;
+    height: 178px;
+
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+@keyframes toBotton {
+    0% {
+        transform: translateY(-650px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.services-wrapper {
+    background: var(--bg-primary);
+    height: 250px;
+}
+
+.services h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--ct-secundary);
 }
