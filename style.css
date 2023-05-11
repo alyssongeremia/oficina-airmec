@@ -38,8 +38,8 @@ body {
 }
 
 .sub-header-wrapper {
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    justify-content: end;
 }
 
 #sub-header {
