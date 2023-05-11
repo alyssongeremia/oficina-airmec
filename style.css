@@ -118,7 +118,7 @@ nav {
     text-align: center;
     margin: auto;
 
-    animation: toBotton 670ms ease-in-out;
+    animation: toLeft 670ms ease-in-out;
 }
 
 .menu li {
@@ -208,13 +208,15 @@ nav {
     margin-bottom: 2.5rem;
 }
 
-@keyframes toBotton {
+@keyframes toLeft {
     0% {
-        transform: translateY(-650px);
+        opacity: 0;
+        transform: translateX(+100%);
     }
 
     100% {
-        transform: translateY(0);
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
