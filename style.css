@@ -74,8 +74,30 @@ nav {
     align-content: center;
 }
 
-nav svg {
-    padding-top: 8px;
+.btn-hamburguer, .btn-close {
+    background: var(--bg-primary);
+    color: var(--bg-secundary);
+
+    font-weight: normal;
+    text-align: center;
+
+    padding: 5.5px 8px;
+    margin-right: 1rem;
+    border-radius: 100px;
+}
+
+.hamburguer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 3px;
+}
+
+.close-wrapper {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 3px;
 }
 
 .menu {
@@ -199,9 +221,26 @@ nav svg {
     height: 250px;
 }
 
-.services h1 {
+.title-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3.5rem;
+}
+
+.title-services h1 {
     font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
     color: var(--ct-secundary);
+}
+
+.title-services a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--bg-primary);
+    background: var(--ct-secundary);
+
+    padding: 1.2rem 3rem;
 }
