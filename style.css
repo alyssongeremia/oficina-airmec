@@ -37,6 +37,11 @@ body {
     display: none;
 }
 
+.sub-header-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 #sub-header {
     background: var(--bg-secundary);
     width: 100%;
@@ -55,8 +60,6 @@ body {
     font-weight: 500;
 
     border-radius: 100px;
-
-    margin-right: 35px;
 }
 
 header {
@@ -81,8 +84,7 @@ nav {
     font-weight: normal;
     text-align: center;
 
-    padding: 5.5px 8px;
-    margin-right: 1rem;
+    padding: 6.7px 9px;
     border-radius: 100px;
 }
 
