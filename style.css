@@ -2,6 +2,7 @@
     --bg-primary: #1D3248;
     --bg-secundary: #F5F5F5;
     --bg-buttons: #2C4C6E;
+    --bg-hover: #DE3C4B;
 
     --ct-black: #000000;
     --ct-primary: #1D3248;
@@ -51,15 +52,17 @@ body {
     flex-direction: row-reverse;
 }
 
-#sub-header a {
+.products-menu-link {
     text-decoration: none;
-    padding: 10px;
+    padding: 11px 14px;
     background: var(--bg-primary);
     color: var(--ct-secundary);
 
     font-weight: 500;
 
     border-radius: 100px;
+
+    transition: all .3s ease-in-out;
 }
 
 header {
@@ -77,6 +80,10 @@ nav {
     align-content: center;
 }
 
+nav img {
+    height: 3.4rem;
+}
+
 .btn-hamburguer, .btn-close {
     background: var(--bg-primary);
     color: var(--bg-secundary);
@@ -84,8 +91,15 @@ nav {
     font-weight: normal;
     text-align: center;
 
-    padding: 6.7px 9px;
+    padding: 7.5px 12px;
     border-radius: 100px;
+}
+
+.btn-close {
+    background: var(--bg-secundary);
+    border: 1.5px solid var(--bg-primary);
+    color: var(--bg-primary);
+    font-weight: 600;
 }
 
 .hamburguer-wrapper {
@@ -100,6 +114,14 @@ nav {
     align-items: center;
     justify-items: center;
     gap: 3px;
+}
+
+.btn-products-menu {
+    display: none;
+}
+
+.menu-desktop {
+    display: none;
 }
 
 .menu {
@@ -208,6 +230,7 @@ nav {
     margin-bottom: 2.5rem;
 }
 
+
 @keyframes toLeft {
     0% {
         opacity: 0;
@@ -223,6 +246,10 @@ nav {
 .services-wrapper {
     background: var(--bg-primary);
     height: 250px;
+}
+
+.services-wrapper-link svg {
+    display: none;
 }
 
 .title-services {
@@ -247,4 +274,143 @@ nav {
     background: var(--ct-secundary);
 
     padding: 1.2rem 3rem;
+}
+
+
+
+
+
+
+@media(min-width: 425px) {
+    .page {
+        min-width: 400px;
+    }
+
+    .img-about-wrapper {
+        text-align: center;
+    }
+}
+
+@media(min-width: 700px) {
+    .page {
+        width: 680px;
+    }
+
+    #sub-header {
+        display: none;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .menu-desktop li {
+        list-style-type: none;
+    }
+
+    .menu-desktop a {
+        text-decoration: none;
+        color: var(--bg-primary);
+        font-weight: 600;
+    }
+
+    .menu-contact {
+        display: none;
+    }
+
+    .btn-products-menu {
+        display: block;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 3.5rem;
+    }
+
+    .about h1 {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    .location-about {
+        justify-content: left;
+    }
+
+    .services {
+        padding-top: 3.5rem;
+    }
+
+    .title-services {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title-services h1 {
+        font-weight: normal;
+    }
+
+    .title-services a {
+        font-weight: normal;
+        padding: 0;
+        background: var(--bg-primary);
+        color: var(--ct-secundary);
+        justify-content: space-between;
+    }
+
+    .services-wrapper-link {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    
+}
+
+@media(min-width: 1100px) {
+    .page {
+        width: 1000px;
+    }
+
+    .about h1 {
+        font-size: 2.8rem;
+    }
+
+    .about img {
+        width: 39rem;
+        height: 23rem;
+    }
+
+    .text-about-wrapper {
+        max-width: 50rem;
+    }
+
+    .title-services h1 {
+        font-size: 2.13rem;
+    }
+
+    ul a:hover {
+        color: var(--bg-hover);
+    }
+
+    .products-menu-link:hover {
+        background: var(--bg-hover);
+    }
+
+    .menu {
+        width: 27.4rem;
+        background: transparent;
+        flex-direction: row;
+        top: 85px;
+        left: 39%;
+    }
+
+    .menu-contact {
+        display: none;
+    }
 }
