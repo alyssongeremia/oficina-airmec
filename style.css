@@ -480,6 +480,12 @@ nav img {
     color: var(--ct-secundary);
 }
 
+@media(min-width: 414px) {
+    .page {
+        width: 390px;
+    }
+}
+
 
 
 
