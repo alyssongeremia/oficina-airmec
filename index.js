@@ -41,7 +41,7 @@ controls.forEach(control => {
         itens.forEach(item => item.classList.remove('current-item'))
 
         itens[currentItem].scrollIntoView({
-            inline: "center", behavior: "smooth"
+            inline: "center", behavior: "smooth", block: "nearest"
         })
 
         itens[currentItem].classList.add('current-item')

@@ -2,11 +2,13 @@
     --bg-primary: #1D3248;
     --bg-secundary: #F5F5F5;
     --bg-buttons: #2C4C6E;
+    --bg-cards: #FFFFFF;
     --bg-hover: #DE3C4B;
 
     --ct-black: #000000;
     --ct-primary: #1D3248;
     --ct-secundary: #F5F5F5;
+    --ct-cards: #1C3146;
 
     --color-selection: #FFA630;
 
@@ -281,22 +283,23 @@ nav img {
 
 .cards-container {
     position: relative;
-    padding: 3.5rem 1rem;
+    padding: 2.5rem 1rem 5.5rem;
 }
 
 .arrow-left, .arrow-right {
+    width: 3.2rem;
+    height: 3.2rem;
+
     position: absolute;
-    top: 0;
+    top: 41%;
     left: 0;
     right: auto;
-    bottom: 0;
+    margin: auto;
 
     font-size: 2.2rem;
     background: transparent;
     cursor: pointer;
     border: none;
-
-    padding: 0 5px;
 }
 
 .arrow-right {
@@ -305,7 +308,7 @@ nav img {
 }
 
 .cards-gallery-wrapper {
-    width: 91%;
+    width: 85%;
     padding: 4.5rem 0;
 
     display: flex;
@@ -320,9 +323,9 @@ nav img {
 }
 
 .cards-gallery {
-    width: 24.2rem;
+    width: 25rem;
 
-    background: var(--bg-secundary);
+    background: #dddddd;
 
     display: flex;
     flex-direction: column;
@@ -343,15 +346,139 @@ nav img {
 }
 
 .item {
-    flex-shrink: none;
-    opacity: 0.7;
     transition: all 600ms ease-in-out;
 }
 
 .current-item {
-    opacity: 1;
+    transform: translateY(-7px);
 }
 
+.air-installation-wrapper {
+    background: var(--bg-secundary);
+    padding: 3.5rem 0 3.5rem;
+}
+
+.air-installation {
+    background: var(--bg-primary);
+    color: var(--ct-secundary);
+
+    padding: 2.5rem 1.6rem;
+}
+
+.air-installation h1 {
+    font-size: 2.13rem;
+    padding-bottom: 2.5rem;
+}
+
+.air-installation span {
+    color: var(--color-selection);
+}
+
+.help-air-wrapper h1 {
+    padding-bottom: 0;
+}
+
+.help-air-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.air-installation a {
+    text-decoration: none;
+    padding: 1rem 2.65rem;
+    background: var(--color-selection);
+    color: var(--bg-primary);
+    font-weight: bold;
+
+    margin-top: 2.5rem;
+
+    display: inline-block;
+
+}
+
+.gallery-cards-machine {
+    display: flex;
+    gap: 1.6rem;
+
+    overflow-x: auto;
+}
+
+.gallery-cards-machine::-webkit-scrollbar {
+    display: none;
+}
+
+.machine-equipment-wrapper {
+    background: var(--bg-secundary);
+    padding-bottom: 5.5rem;
+}
+
+.machine-equipment h1:nth-child(1) {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--bg-primary);
+
+    text-align: center;
+
+    padding-bottom: 4.5rem;
+}
+
+.cards-machine {
+    width: 23.8rem;
+    background: var(--bg-cards);
+
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    border-radius: 2px;
+}
+
+.cards-machine h1 {
+    font-size: 1.6rem;
+    color: var(--ct-cards);
+    text-align: center;
+
+    padding-bottom: 2.5rem;
+}
+
+.cards-machine img {
+    height: 190px;
+    padding-bottom: 2.5rem;
+}
+
+.price-wrapper {
+    padding: 0 0 2rem 2rem;
+}
+
+.price-wrapper p {
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    padding-bottom: 4px;
+}
+
+.price-wrapper span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--bg-buttons);
+}
+
+.buy-whats-link {
+    width: 21.9rem;
+    height: 4.3rem;
+    background: var(--bg-buttons);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    margin: 0 auto 1rem;
+    border-radius: 2px;
+}
+
+.buy-whats-link a {
+    text-decoration: none;
+    color: var(--ct-secundary);
+}
 
 
 
@@ -365,11 +492,38 @@ nav img {
     .img-about-wrapper {
         text-align: center;
     }
+
+    .air-installation {
+        padding-left: 3.5rem;
+    }
+}
+
+@media(min-width: 460px) {
+    .page {
+        width: 420px;
+    }
+
+    .cards-gallery-wrapper {
+        width: 95%;
+    }
+
+    .arrow-left, .arrow-right {
+        padding: 0;
+    }
+
+    .air-installation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4.5rem;
+        padding-left: 1.6rem;
+    }
+
 }
 
 @media(min-width: 700px) {
     .page {
-        width: 680px;
+        width: 670px;
     }
 
     #sub-header {
@@ -447,24 +601,16 @@ nav img {
     .useful-contacts a {
         text-decoration: none;
         color: var(--ct-black);
-        transition: all .3s ease-in-out;
-    }
 
-    .useful-contacts p {
-        transition: all .3s ease-in-out;
-    }
-
-    .useful-contacts p:hover {
-        opacity: 0.7;;
-        cursor: pointer;
+        transition: all 200ms ease-in-out;
     }
 
     .useful-contacts a:hover {
-        opacity: 0.7;
+        transform: translateY(-2px);
     }
 
     .about {
-        max-width: 880px;
+        max-width: 900px;
         display: flex;
         justify-content: space-between;
 
@@ -485,8 +631,11 @@ nav img {
     }
 
     .title-services {
+        max-width: 900px;
         flex-direction: row;
         justify-content: space-between;
+
+        margin: auto;
     }
 
     .title-services h1 {
@@ -503,10 +652,12 @@ nav img {
         display: flex;
         align-items: center;
         gap: 3px;
+
+        transition: all 200ms ease-in-out;
     }
 
     .title-services a:hover {
-        transform: scale(1.05);
+        transform: translateX(-3px);
     }
 
     .services-wrapper-link {
@@ -516,14 +667,23 @@ nav img {
     }
 
     .services-wrapper-link svg {
-    display: block;
-}
+        display: block;
+    }
+
+    .cards-container {
+        max-width: 690px;
+        margin: auto;
+    }
     
 }
 
 @media(min-width: 1100px) {
     .page {
         width: 1000px;
+    }
+
+    .menu-desktop {
+        gap: 5rem;
     }
 
     .useful-contacts-wrapper {
@@ -547,12 +707,21 @@ nav img {
         font-size: 2.13rem;
     }
 
+    ul a {
+        transition: all 200ms ease-in-out;
+    }
+
     ul a:hover {
-        opacity: 0.7;
+        background: var(--bg-primary);
+        color: var(--ct-secundary);
+        padding: 0.6rem;
+        border-radius: 1000px;
     }
 
     .products-menu-link:hover {
-        opacity: 0.9;;
+        background: var(--bg-secundary);
+        color: var(--bg-primary);
+        border: 1px solid var(--bg-primary);
     }
 
     .menu {
@@ -567,7 +736,52 @@ nav img {
         display: none;
     }
 
+    .cards-container {
+        max-width: 1100px;
+        padding-top: 0;
+    }
+
     .cards-gallery-wrapper {
-        width: 95%;
+        width: 1017px;
+    }
+
+    .arrow-right, .arrow-left {
+        width: 3.7rem;
+        height: 6rem;
+
+        top: 32%;
+    }
+
+    .arrow-right {
+        margin-left: 100px;
+    }
+
+    .arrow-right:hover, .arrow-left:hover {
+        background: #162435;
+        border: #F5F5F5;
+    }
+
+    .air-installation-wrapper {
+        padding: 5.5rem 0;
+    }
+
+    .air-installation {
+        height: 19rem;
+    }
+
+    .air-installation h1 {
+        font-size: 2.84rem;
+    }
+
+    .info-air span {
+        font-size: 2rem;
+    }
+
+    .air-installation a {
+        margin-top: 1rem;
+    }
+
+    .air-installation a:hover {
+        background: #e6952b;
     }
 }
