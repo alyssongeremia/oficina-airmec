@@ -15,6 +15,10 @@
     font-size: 62.5%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -381,7 +385,37 @@ nav img {
 .help-air-wrapper {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 7px;
+}
+
+.help-air-wrapper svg {
+    margin-top: 5px;
+}
+
+dialog {
+    width: 80vw;
+    height: 15rem;
+    background: var(--bg-buttons);
+    color: var(--ct-secundary);
+    line-height: 2.5rem;
+
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+}
+
+dialog div {
+    display: flex;
+    justify-content: end;
+    padding: 1rem 1rem 0 0;
+}
+
+dialog p {
+    padding: 1.2rem 0 0 1rem;
+}
+
+dialog::selection {
+    display: none;
 }
 
 .air-installation a {
@@ -397,11 +431,16 @@ nav img {
 
 }
 
+.air-installation svg {
+    cursor: pointer;
+}
+
 .gallery-cards-machine {
     display: flex;
     gap: 1.6rem;
 
     overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
 .gallery-cards-machine::-webkit-scrollbar {
@@ -429,6 +468,8 @@ nav img {
 
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     border-radius: 2px;
+
+    scroll-snap-align: center;
 }
 
 .cards-machine h1 {
@@ -795,5 +836,10 @@ nav img {
 
     .air-installation a:hover {
         background: #e6952b;
+    }
+
+    .gallery-cards-machine {
+        display: grid;
+        grid-template-areas: "A B C D" "E F G H";
     }
 }

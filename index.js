@@ -47,3 +47,17 @@ controls.forEach(control => {
         itens[currentItem].classList.add('current-item')
     })
 })
+
+//dialog-air-installation
+
+const btnHelpAirInstallation = document.querySelector('.help-air-installation')
+const btnCloseAirInstallation = document.querySelector('.close-help-air-installation')
+const modalAirInstallation = document.querySelector('dialog')
+
+btnHelpAirInstallation.addEventListener('click', function() {
+    modalAirInstallation.show()
+})
+
+btnCloseAirInstallation.addEventListener('click', function() {
+    modalAirInstallation.close()
+})
