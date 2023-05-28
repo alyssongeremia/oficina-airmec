@@ -295,7 +295,7 @@ nav img {
     height: 3.2rem;
 
     position: absolute;
-    top: 41%;
+    top: 36%;
     left: 0;
     right: auto;
     margin: auto;
@@ -309,6 +309,11 @@ nav img {
 .arrow-right {
     left: auto;
     right: 0;
+}
+
+.arrow-left svg, .arrow-right svg {
+    background: #142332;
+    height: 6.4rem;
 }
 
 .cards-gallery-wrapper {
@@ -357,39 +362,58 @@ nav img {
     transform: translateY(-7px);
 }
 
+.advertising-airinstallation-wrapper {
+    text-align: center;
+    padding: 5.5rem 0;
+    background: var(--bg-secundary);
+
+    display: none;
+}
+
 .air-installation-wrapper {
     background: var(--bg-secundary);
     padding: 3.5rem 0 3.5rem;
 }
 
 .air-installation {
-    background: var(--bg-primary);
+    background: linear-gradient(180deg, rgba(29,50,72,1) 0%, rgba(20,35,50,1) 100%);
     color: var(--ct-secundary);
 
-    padding: 2.5rem 1.6rem;
+    padding: 1.6rem 1.6rem 1.6rem 2.5rem;
+}
+
+.air-installation p:nth-child(1) {
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
 }
 
 .air-installation h1 {
-    font-size: 2.13rem;
-    padding-bottom: 2.5rem;
+    font-size: 2.1rem;
+    font-weight: 400;
+
+    margin-bottom: 2.4rem;
 }
 
-.air-installation span {
-    color: var(--color-selection);
+.title-air-installation span {
+    padding: 1rem;
+    background: var(--color-selection);
+    color: var(--ct-primary);
+    font-weight: 600;
+
+    border-radius: 100px;
 }
 
-.help-air-wrapper h1 {
-    padding-bottom: 0;
-}
-
-.help-air-wrapper {
+.info-air div:nth-child(1){
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 5px;
+
+    margin-top: 2.5rem;
 }
 
-.help-air-wrapper svg {
-    margin-top: 5px;
+.help-air-wrapper p {
+    font-size: 1.2rem;
+    padding-left: 4.5rem;
 }
 
 dialog {
@@ -429,10 +453,6 @@ dialog::selection {
 
     display: inline-block;
 
-}
-
-.air-installation svg {
-    cursor: pointer;
 }
 
 .gallery-cards-machine {
@@ -475,9 +495,7 @@ dialog::selection {
 .cards-machine h1 {
     font-size: 1.6rem;
     color: var(--ct-cards);
-    text-align: center;
-
-    padding-bottom: 2.5rem;
+    padding: 0 0 2.5rem 2rem;
 }
 
 .cards-machine img {
@@ -503,6 +521,7 @@ dialog::selection {
 }
 
 .buy-whats-link {
+    text-decoration: none;
     width: 21.9rem;
     height: 4.3rem;
     background: var(--bg-buttons);
@@ -514,12 +533,186 @@ dialog::selection {
 
     margin: 0 auto 1rem;
     border-radius: 2px;
+
+    transition: all 200ms ease-in-out;
 }
 
-.buy-whats-link a {
+.buy-whats-link p {
     text-decoration: none;
     color: var(--ct-secundary);
 }
+
+.shop-informations-wrapper {
+    background: var(--bg-secundary);
+    padding: 0 0 5.5rem;
+}
+
+.shop-informations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ticket-shop {
+    width: 24rem;
+    height: 6.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.ticket-shop:nth-child(2) {
+    border-top: 1.5px solid var(--bg-primary);
+    border-bottom: 1.5px solid var(--bg-primary);
+}
+
+.ticket-shop span {
+    font-weight: bold;
+}
+
+.rubbershop-wrapper {
+    background: var(--bg-secundary);
+    padding-bottom: 5.5rem;
+}
+
+.rubbershop-material h1:nth-child(1) {
+    font-size: 1.8rem;
+    color: var(--ct-primary);
+    text-align: center;
+
+    padding-bottom: 4.5rem;
+}
+
+.gallery-cards-rubbershop {
+    display: flex;
+    gap: 1.6rem;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-cards-rubbershop::-webkit-scrollbar {
+    display: none;
+}
+
+.cards-rubbershop {
+    width: 23.8rem;
+    background: var(--bg-cards);
+
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+
+    padding: 2px;
+    border-radius: 2px;
+    scroll-snap-align: center;
+}
+
+.cards-rubbershop h1 {
+    font-size: 1.6rem;
+    color: var(--ct-primary);
+    text-align: center;
+
+    padding-bottom: 1.2rem;
+}
+
+.whats-rubbershop-wrapper {
+    text-decoration: none;
+}
+
+.whats-rubbershop-link {
+    width: 23rem;
+    height: 5rem;
+    background: var(--bg-buttons);
+    color: var(--ct-secundary);
+
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+    margin: 3.5rem auto 0;
+    border-radius: 2px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.advertising-rubbershop-wrapper {
+    background: var(--bg-secundary);
+    text-align: center;
+    padding: 5.5rem 0;
+}
+
+picture img {
+    max-width: 1000px;
+}
+
+.partners-wrapper {
+    background: var(--bg-primary);
+    color: var(--bg-secundary);
+
+    padding-bottom: 5.5rem;
+}
+
+.partners h1:nth-child(1) {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 4.5rem 0 4.5rem;
+}
+
+.gallery-cards-partners {
+    display: flex;
+    gap: 3.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow-x: auto;
+}
+
+.cards-partners {
+    width: 15.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-partners img {
+    width: 10rem;
+}
+
+.cards-partners h1 {
+    font-size: 1.6rem;
+}
+
+.maps-wrapper {
+    background: var(--bg-secundary);
+    text-align: center;
+
+    padding: 4.5rem 0;
+}
+
+.maps-wrapper h1 {
+    font-size: 1.8rem;
+    color: var(--ct-primary);
+
+    padding-bottom: 3.5rem;
+}
+
+.maps {
+    width: 95%;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+
+
 
 @media(min-width: 414px) {
     .page {
@@ -538,10 +731,6 @@ dialog::selection {
 
     .img-about-wrapper {
         text-align: center;
-    }
-
-    .air-installation {
-        padding-left: 3.5rem;
     }
 }
 
@@ -571,6 +760,10 @@ dialog::selection {
 @media(min-width: 520px) {
     .page {
         width: 500px;
+    }
+
+    .ticket-shop:nth-child(2) {
+        border: none;
     }
 }
 
@@ -802,16 +995,22 @@ dialog::selection {
         width: 3.7rem;
         height: 6rem;
 
-        top: 32%;
+        top: 30%;
     }
 
     .arrow-right {
         margin-left: 100px;
     }
 
-    .arrow-right:hover, .arrow-left:hover {
-        background: #162435;
-        border: #F5F5F5;
+    .arrow-right svg, .arrow-left svg {
+        width: 90%;
+
+        transition: all 200ms ease-in-out;
+    }
+
+    .arrow-right svg:hover, .arrow-left svg:hover {
+        background: var(--bg-secundary);
+        fill: var(--bg-primary);
     }
 
     .air-installation-wrapper {
@@ -838,8 +1037,56 @@ dialog::selection {
         background: #e6952b;
     }
 
+    .shop-informations-wrapper {
+        padding: 3.5rem 0 9rem;
+    }
+
+    .ticket-shop:nth-child(2) {
+        border-right: 1.5px solid var(--bg-primary);
+        border-left: 1.5px solid var(--bg-primary);
+    }
+
+    .machine-equipment h1:nth-child(1) {
+        font-size: 2.1rem;
+    }
+
+    .buy-whats-link:hover {
+        background: #284463;
+    }
+
     .gallery-cards-machine {
         display: grid;
         grid-template-areas: "A B C D" "E F G H";
+        grid-row-gap: 2.1rem;
+    }
+
+    .rubbershop-material h1:nth-child(1) {
+        font-size: 2.1rem;
+    }
+
+    .gallery-cards-rubbershop {
+        display: grid;
+        grid-template-areas: "A B C D" "E F G H";
+        grid-row-gap: 2.1rem;
+    }
+
+    .whats-rubbershop-link {
+        width: 28rem;
+    }
+
+    .whats-rubbershop-link:hover {
+        background: #284463;
+    }
+
+    .partners h1:nth-child(1) {
+        font-size: 2.1rem;
+    }
+
+    .gallery-cards-partners {
+        gap: 5.5rem;
+    }
+
+    .maps-wrapper h1 {
+        font-size: 2.1rem;
     }
 }
