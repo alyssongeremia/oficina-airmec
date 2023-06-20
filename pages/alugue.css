@@ -1,0 +1,167 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: #dddddd;
+    font-size: 1.6rem;
+}
+
+header {
+    background: #dddddd;
+}
+
+header section:nth-child(1) {
+    border-bottom: 0.2px solid #1C3146;
+}
+
+nav {
+    padding-bottom: 1rem;
+}
+
+.back-link-desktop {
+    display: none;
+    text-decoration: none;
+    color: #313131;
+
+    transition: all 200ms ease-in-out;
+}
+
+.title-elevator {
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.title-elevator h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #313131;
+    text-align: center;
+
+    max-width: 24rem;
+}
+
+.elevators-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5rem;
+
+    padding: 5.5rem 0 3.5rem;
+}
+
+.card-elevator {
+    width: 31rem;
+    min-height: 40rem;
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    border-radius: 2px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.card-elevator img {
+    max-width: 30rem;
+    max-height: 20rem;
+}
+
+.card-elevator h1 {
+    font-size: 1.8rem;
+}
+
+#free-instalation {
+    flex-direction: row;
+    gap: 7px;
+}
+
+.card-elevator h2 {
+    font-weight: normal;
+
+    padding-top: 1.6rem;
+
+    display: flex;
+}
+
+.card-elevator span {
+    font-size: 1.6rem;
+    padding-top: 8px;
+}
+
+.card-elevator div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.card-elevator a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #f5f5f5;
+    background: #38618C;
+
+    padding: 1.4rem 7.2rem;
+    margin-bottom: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    transition: all 300ms ease-in-out;
+}
+
+.card-elevator a:hover {
+    background: #2d4e70;
+}
+
+.back-link-mobile {
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 3.5rem;
+}
+
+.back-link-mobile a {
+    max-width: 7rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #313131;
+
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+@media(min-width: 768px) {
+    .back-link-mobile {
+        display: none;
+    }
+
+    .back-link-desktop {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .back-link-desktop:hover {
+        transform: translate(-2px);
+    }
+
+    .title-elevator h1 {
+        font-size: 1.8rem;
+        max-width: 42rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .elevators-wrapper {
+        justify-content: space-evenly;
+    }
+}

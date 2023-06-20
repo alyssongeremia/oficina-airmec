@@ -49,7 +49,7 @@ controls.forEach(control => {
 })
 
 //dialog-air-installation
-
+/*
 const btnHelpAirInstallation = document.querySelector('.help-air-installation')
 const btnCloseAirInstallation = document.querySelector('.close-help-air-installation')
 const modalAirInstallation = document.querySelector('dialog')
@@ -61,3 +61,41 @@ btnHelpAirInstallation.addEventListener('click', function() {
 btnCloseAirInstallation.addEventListener('click', function() {
     modalAirInstallation.close()
 })
+*/
+
+//voltar ao top da pagina
+
+const backToTop = document.querySelector('#back-to-top')
+
+backToTop.addEventListener('click', function() {
+    window.scrollTo(0,0)
+})
+
+const scrollToProducts = document.querySelector('.products-menu-link')
+const partsGallery = document.querySelector('.parts-gallery-wrapper')
+
+scrollToProducts.addEventListener('click', function() {
+    alert('clicou')
+})
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    cssMode: true,
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+        delay: 3000
+    }
+  });
