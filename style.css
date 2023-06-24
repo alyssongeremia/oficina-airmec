@@ -1017,7 +1017,7 @@ footer h1:nth-child(1) {
 
     .gallery-cards-machine {
         display: grid;
-        grid-template-areas: "A B C D" "E F G H";
+        grid-template-areas: "A B C D" "E F G H" "I J K L";
         grid-row-gap: 2.1rem;
     }
 

@@ -71,12 +71,7 @@ backToTop.addEventListener('click', function() {
     window.scrollTo(0,0)
 })
 
-const scrollToProducts = document.querySelector('.products-menu-link')
-const partsGallery = document.querySelector('.parts-gallery-wrapper')
 
-scrollToProducts.addEventListener('click', function() {
-    alert('clicou')
-})
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
