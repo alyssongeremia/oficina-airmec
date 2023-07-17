@@ -48,21 +48,6 @@ controls.forEach(control => {
     })
 })
 
-//dialog-air-installation
-/*
-const btnHelpAirInstallation = document.querySelector('.help-air-installation')
-const btnCloseAirInstallation = document.querySelector('.close-help-air-installation')
-const modalAirInstallation = document.querySelector('dialog')
-
-btnHelpAirInstallation.addEventListener('click', function() {
-    modalAirInstallation.show()
-})
-
-btnCloseAirInstallation.addEventListener('click', function() {
-    modalAirInstallation.close()
-})
-*/
-
 //voltar ao top da pagina
 
 const backToTop = document.querySelector('#back-to-top')
@@ -70,8 +55,6 @@ const backToTop = document.querySelector('#back-to-top')
 backToTop.addEventListener('click', function() {
     window.scrollTo(0,0)
 })
-
-
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -93,4 +76,5 @@ const swiper = new Swiper('.swiper', {
     autoplay: {
         delay: 3000
     }
-  });
+});
+

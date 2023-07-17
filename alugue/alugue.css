@@ -11,12 +11,8 @@ header {
     background: #dddddd;
 }
 
-header section:nth-child(1) {
-    border-bottom: 0.2px solid #1C3146;
-}
-
-nav {
-    padding-bottom: 1rem;
+header nav {
+    justify-content: center;
 }
 
 .back-link-desktop {
@@ -144,10 +140,14 @@ nav {
         display: none;
     }
 
+    header nav {
+        justify-content: space-between;
+    }
+
     .back-link-desktop {
         display: flex;
         align-items: center;
-        gap: 2px;
+        gap: 5px;
     }
 
     .back-link-desktop:hover {

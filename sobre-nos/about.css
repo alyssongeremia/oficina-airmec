@@ -1,0 +1,132 @@
+:root {
+    --bg-primary: #1D3248;
+    --bg-secundary: #dddddd;
+    --bg-footer: #13212F;
+    --bg-buttons: #2C4C6E;
+    --bg-cards: #FFFFFF;
+    --bg-hover: #DE3C4B;
+
+    --ct-black: #000000;
+    --ct-primary: #1D3248;
+    --ct-secundary: #F5F5F5;
+    --ct-cards: #1C3146;
+
+    --color-selection: #FFA630;
+}
+
+.menu {
+    top: 75px;
+}
+
+main {
+    padding: 5.5rem 0;
+}
+
+.about-container {
+    color: var(--ct-cards);
+    text-align: center;
+
+    padding: 2.5rem 0;
+
+    background: var(--ct-secundary);
+    border-radius: 10px;
+}
+
+.about-container h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 2.4rem;
+}
+
+.about-container .cards-wrapper {
+    margin-top: 3.5rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.card-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.card-about h1 {
+    max-width: 22rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+
+    text-align: left;
+}
+
+.services-container {
+    padding: 2.5rem 0;
+}
+
+.services-container .titles {
+    padding-top: 4.5rem;
+    text-align: center;
+}
+
+.services-container .cards-services-wrapper {
+    display: flex;
+    gap: 1.6rem;
+
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.cards-services-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.services-container .card {
+    max-width: 28rem;
+    height: 6.5rem;
+    background: #c7c7c7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    scroll-snap-align: center;
+}
+
+.services-container .card h2 {
+    min-width: 28rem;
+    font-size: 1.8rem;
+    color: #1C3146;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+
+    .about-container {
+        padding: 3.5rem 0;
+    }
+
+    .cards-wrapper {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    .maps-wrapper h1 {
+        text-align: center;
+        color: #000000;
+        font-size: 2.1rem;
+        font-weight: normal;
+    }
+
+    .cards-services-wrapper {
+        display: grid !important;
+        grid-template-areas: "A B C";
+        justify-content: space-around;
+    }
+}
