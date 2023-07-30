@@ -44,7 +44,7 @@ header nav {
     justify-content: center;
     gap: 3.5rem;
 
-    padding: 5.5rem 0 3.5rem;
+    padding: 3.5rem 0 3.5rem;
 }
 
 .card-elevator {
@@ -114,6 +114,25 @@ header nav {
     background: #2d4e70;
 }
 
+.information {
+    max-width: 68rem;
+    padding: 0 1rem;
+    margin-bottom: 4.5rem;
+
+}
+
+.information div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.information h1 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-align: justify;
+}
+
 .back-link-mobile {
     margin: auto;
 
@@ -158,10 +177,25 @@ header nav {
         font-size: 1.8rem;
         max-width: 42rem;
     }
+
+    .information div {
+        flex-direction: row;
+    }
 }
 
 @media(min-width: 1024px) {
     .elevators-wrapper {
         justify-content: space-evenly;
+        padding: 2.4rem 0 1.8rem;
+    }
+
+    .title-elevator {
+        padding-top: .5rem;
+    }
+}
+
+@media(min-width: 1600px) {
+    .elevators-wrapper {
+        padding: 3.5rem 0;
     }
 }

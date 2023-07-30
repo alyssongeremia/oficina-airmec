@@ -53,7 +53,9 @@ controls.forEach(control => {
 const backToTop = document.querySelector('#back-to-top')
 
 backToTop.addEventListener('click', function() {
-    window.scrollTo(0,0)
+    window.scrollTo({
+        top: 0
+    })
 })
 
 const swiper = new Swiper('.swiper', {
@@ -78,3 +80,31 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
+const showOffer = document.querySelector('.offer-mobile')
+const showOfferDesktop = document.querySelector('.offer-desktop')
+const modal = document.querySelector('dialog')
+const closeOffer = document.querySelector('.close-offer')
+
+showOffer.addEventListener('click', () => {
+    modal.showModal()
+})
+
+closeOffer.addEventListener('click', () => {
+    modal.close()
+})
+
+showOfferDesktop.addEventListener('click', () => {
+    modal.show()
+})
+
+const btnWhatsapp = document.querySelector('.btn-whatsapp')
+const cardsMachine = document.querySelector('.parts-gallery-wrapper')
+
+cardsMachine.addEventListener('mouseover', () => {
+    btnWhatsapp.classList.add('animation')
+    setTimeout(offAnimation, 3000)
+})
+
+function offAnimation() {
+    btnWhatsapp.classList.remove('animation')
+}
