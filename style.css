@@ -83,7 +83,7 @@ body::-webkit-scrollbar-thumb {
 
     border: 1px solid var(--ct-secundary);
     border-radius: 100px;
-    transition: all .3s ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 header {
@@ -222,8 +222,66 @@ nav img {
     gap: 35px;
 }
 
+.card-offer a:hover {
+    background-color: #1f354d;
+}
+
 .useful-contacts {
-    display: none;
+    min-height: 8rem;
+    background: var(--ct-secundary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.4rem;
+    border-radius: 1rem;
+    margin-top: 3.5rem;
+}
+
+.useful-contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.service-scheduling {
+    display: flex;
+    gap: 5px;
+}
+
+.service-scheduling img {
+    width: 32px;
+    height: 32px;
+}
+
+.elevator-rental {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.how-to-get {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.useful-contacts h1 {
+    font-size: 1.2rem;
+}
+
+.useful-contacts a {
+    text-decoration: none;
+    color: var(--ct-black);
+
+    transition: all 200ms ease-in-out;
+}
+
+.useful-contacts a:hover {
+    transform: translateY(-3px);
 }
 
 @keyframes toLeft {
@@ -242,16 +300,16 @@ dialog {
     border: none;
     width: 30rem;
     background: var(--ct-secundary);
-    border-radius: 1rem;
+    border-radius: 1.4rem;
 
     margin: auto;
     padding: 1.4rem;
 
     position: absolute;
     z-index: 1000;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
-    animation: scale-up-center 600ms ease-in-out;
+    animation: fade-in-fwd 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
 
@@ -288,12 +346,13 @@ dialog .icon {
     max-width: 27.2rem;
     margin: auto;
     margin-top: -2.4rem;
-    border-bottom: 1px solid #8094a8;
 }
 
 .card-offer h1 {
     font-size: 1.6rem;
     color: var(--bg-footer);
+    padding-top: 1.6rem;
+    border-top: 1px solid #8094a8;
 }
 
 .prices-offer {
@@ -316,17 +375,21 @@ dialog .icon {
     color: var(--ct-secundary);
     background-color: var(--bg-buttons);
 
+    border-radius: .5rem;
+
     transition: all 200ms ease-in-out;
 }
 
-@keyframes scale-up-center {
+@keyframes fade-in-fwd {
     0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
     }
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
     }
 }
 
@@ -388,11 +451,11 @@ dialog .icon {
 
 .cards-machine {
     width: 100%;
-    background: var(--ct-secundary);
     height: 35rem;
-
+    background: var(--ct-secundary);
+    
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-    border-radius: 2px;
+    border-radius: .5rem;
     padding: 0 12px;
 
     display: flex;
@@ -403,10 +466,16 @@ dialog .icon {
     scroll-snap-align: center;
 }
 
+.cards-machine div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cards-machine ul {
     list-style-type: none;
     align-self: flex-start;
-    padding-left: 1.6rem;
+    padding-left: 2.4rem;
     
     display: flex;
     flex-direction: column;
@@ -422,20 +491,20 @@ dialog .icon {
 .cards-machine h1 {
     font-size: 1.6rem;
     font-weight: 600;
-    padding-left: 1.6rem;
     color: var(--ct-black);
 }
 
 .cards-machine img {
-    width: 100%;
+    width: 241px;
     height: 190px;
     object-fit: contain;
     padding-bottom: 2.5rem;
+    margin-top: .8rem;
 }
 
 .buy-whats-link {
     text-decoration: none;
-    width: 21.9rem;
+    width: 100%;
     height: 4.3rem;
     background: var(--bg-buttons);
 
@@ -445,7 +514,7 @@ dialog .icon {
     gap: 5px;
 
     margin-bottom: 1rem;
-    border-radius: 2px;
+    border-radius: .5rem;
 
     transition: all 200ms ease-in-out;
 }
@@ -481,7 +550,7 @@ dialog .icon {
     height: 23rem;
 
     background: var(--ct-secundary);
-    border-radius: 3px;
+    border-radius: .5rem;
 
     display: flex;
     align-items: center;
@@ -527,7 +596,7 @@ dialog .icon {
 }
 
 .whats-horizontal-card {
-    width: 92%;
+    width: 94%;
     height: 4.5rem;
     text-decoration: none;
     background: var(--bg-buttons);
@@ -540,7 +609,7 @@ dialog .icon {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    border-radius: 2px;
+    border-radius: .5rem;
 
     transition: all 200ms ease-in-out;
 }
@@ -720,7 +789,67 @@ dialog .icon {
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 4.5rem;
+    margin-bottom: 5.4rem;
+}
+
+.tires-wrapper {
+    min-height: 13rem;
+
+    display: grid;
+    align-items: center;
+
+    position: relative;
+    margin-bottom: 3.4rem;
+}
+
+.tires-wrapper img {
+    position: absolute;
+    left: .4rem;
+    bottom: 0;
+}
+
+.tires-container {
+    width: 100%;
+    height: 12rem;
+    padding: 1.6rem;
+    background: var(--ct-secundary);
+
+    display: grid;
+    border-radius: 1rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.tires-container h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+
+    padding: 0 0 1.4rem 10rem;
+}
+
+.tires-gallery {
+    display: flex;
+    gap: 1.4rem;
+
+    padding-left: 10rem;
+    overflow: auto hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.tires-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.card-tire {
+    background: var(--bg-secundary);
+
+    padding: 0 1.2rem;
+    border-radius: .5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+
+    scroll-snap-align: center;
 }
 
 .info-card-rubber {
@@ -756,15 +885,23 @@ dialog .icon {
 
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 
-    padding: 2px;
-    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: .5rem;
     scroll-snap-align: center;
+}
+
+.cards-rubbershop img {
+    width: 19rem;
 }
 
 .cards-rubbershop h1 {
     font-size: 1.6rem;
     font-weight: 600;
-    color: var(--ct-primary);
+    color: var(--ct-black);
     text-align: center;
 
     padding-bottom: 1.2rem;
@@ -792,7 +929,7 @@ picture img {
 }
 
 .whats-rubbershop-link {
-    width: 23rem;
+    width: 29rem;
     height: 5rem;
     background: var(--bg-buttons);
     color: var(--ct-secundary);
@@ -829,7 +966,7 @@ picture img {
 
 .gallery-cards-partners {
     display: flex;
-    gap: 3.5rem;
+    gap: 3.4rem;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -837,7 +974,7 @@ picture img {
 }
 
 .cards-partners {
-    width: 18rem;
+    width: 17rem;
 
     background: var(--bg-primary);
     color: var(--ct-secundary);
@@ -1023,6 +1160,10 @@ footer h1:nth-child(1) {
     .page {
         width: 390px;
     }
+
+    .useful-contacts {
+        padding: 2.4rem;
+    }
 }
 
 @media(min-width: 425px) {
@@ -1092,7 +1233,8 @@ footer h1:nth-child(1) {
 
     dialog {
         top: 20%;
-        width: 35rem;
+        width: 45rem;
+        padding: 1rem 1.6rem 2.4rem;
     }
 
     .card-offer h1 {
@@ -1103,63 +1245,8 @@ footer h1:nth-child(1) {
         padding-left: 2rem;
     }
 
-    .useful-contacts-wrapper {
-        display: flex;
-        align-items: flex-end;
-        gap: 2rem;
-    }
-
-    .card-offer a:hover {
-        background-color: #1f354d;
-    }
-
     .useful-contacts {
-        height: 8rem;
-        background: var(--ct-secundary);
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        border-radius: 1rem;
-        margin-top: 3.5rem;
-    }
-
-    .service-scheduling {
-        display: flex;
-        gap: 5px;
-    }
-
-    .service-scheduling img {
-        width: 32px;
-        height: 32px;
-    }
-
-    .elevator-rental {
-        display: flex;
-        align-items: flex-end;
-        gap: 5px;
-    }
-
-    .how-to-get {
-        display: flex;
-        align-items: flex-end;
-        gap: 5px;
-    }
-
-    .useful-contacts h1 {
-        font-size: 1.2rem;
-    }
-
-    .useful-contacts a {
-        text-decoration: none;
-        color: var(--ct-black);
-
-        transition: all 200ms ease-in-out;
-    }
-
-    .useful-contacts a:hover {
-        transform: translateY(-3px);
+        padding: 0;
     }
 
     .cards-container {
@@ -1221,6 +1308,22 @@ footer h1:nth-child(1) {
         width: 924px;
     }
 
+    .useful-contacts-wrapper {
+        gap: 4.4rem;
+    }
+
+    .tires-wrapper img {
+        left: 2.4rem;
+    }
+
+    .tires-container h1 {
+        padding: 0 0 1.4rem 13rem
+    }
+
+    .tires-gallery {
+        padding-left: 13rem;
+    }
+
 }
 
 @media(min-width: 1100px) {
@@ -1233,7 +1336,7 @@ footer h1:nth-child(1) {
     }
 
     .useful-contacts-wrapper {
-        gap: 5.5rem;
+        gap: 7.4rem;
     }
 
     ul a {
@@ -1288,6 +1391,10 @@ footer h1:nth-child(1) {
         font-size: 2.1rem;
     }
 
+    .buy-whats-link {
+        width: 94%;
+    }
+
     .buy-whats-link:hover {
         background: #1f354d;
     }
@@ -1333,17 +1440,21 @@ footer h1:nth-child(1) {
         text-align: left;
     }
 
+    .tires-gallery {
+        gap: 1.8rem;
+    }
+
     .img-rubbershop h1 {
         font-size: 2.1rem;
     }
 
     .gallery-cards-rubbershop {
         display: grid;
-        grid-template-areas: "A B C D" "E F G H";
+        grid-template-areas: "A B C D E" "F G H I J";
     }
 
     .whats-rubbershop-link {
-        width: 28rem;
+        width: 34rem;
     }
 
     .whats-rubbershop-link:hover {
