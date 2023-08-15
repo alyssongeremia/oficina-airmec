@@ -651,7 +651,7 @@ dialog .icon {
 .parts-container-wrapper {
     display: flex;
     align-items: center;
-
+    padding: 0 .1rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
