@@ -308,8 +308,7 @@ dialog {
     position: absolute;
     z-index: 1000;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-
-    animation: fade-in-fwd 200ms ease-in-out;
+    
     transition: all 200ms ease-in-out;
 }
 
@@ -380,58 +379,6 @@ dialog .icon {
     transition: all 200ms ease-in-out;
 }
 
-@keyframes fade-in-fwd {
-    0% {
-      -webkit-transform: translateZ(-80px);
-              transform: translateZ(-80px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
-    }
-}
-
-.machine-parts h1 {
-    font-size: 1.8rem;
-    font-weight: normal;
-    text-align: center;
-
-    padding-top: 5.5rem;
-}
-
-.parts-gallery-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.6rem;
-    padding-top: 3.5rem;
-}
-
-.parts-gallery-wrapper img {
-    max-width: 33.1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 1rem;
-}
-
-.cards-machine-parts {
-    position: relative;
-}
-
-.cards-machine-parts span {
-    position: absolute;
-    padding: .7rem 1.2rem;
-    background: var(--ct-cards);
-    color: var(--ct-secundary);
-    border-radius: .7rem;
-    left: 1.4rem;
-    top: 2.4rem;
-
-    opacity: 0.9;
-}
-
 .gallery-cards-machine {
     display: flex;
     gap: 1.6rem;
@@ -463,6 +410,7 @@ dialog .icon {
     justify-content: space-between;
     align-items: center;
 
+    transition: all 200ms ease-in-out;
     scroll-snap-align: center;
 }
 
@@ -685,12 +633,65 @@ dialog .icon {
 }
 
 .about-air a {
+    width: 100%;
     text-decoration: none;
-    font-size: 1.4rem;
     font-weight: bold;
     color: #1D3248;
     background: var(--ct-secundary);
-    padding: .6rem 2.5rem;
+    padding: 1rem 2.5rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.parts-container {
+    padding: 5.4rem 0;
+}
+
+.parts-container-wrapper {
+    display: flex;
+    align-items: center;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.parts-container-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.parts-container h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    color: #585858;
+    overflow-x: auto;
+
+    margin-bottom: 1.4rem;
+}
+
+.card-parts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: .7rem .2rem;
+    margin: .4rem;
+    border-radius: .2rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    scroll-snap-align: center;
+}
+
+.cards-parts:hover {
+    transform: scale(1.1);
+}
+
+.card-parts span {
+    width: 12rem;
+    height: 3.8rem;
+    text-align: center;
 }
 
 .shop-informations-wrapper {
@@ -773,10 +774,6 @@ dialog .icon {
     justify-content: center;
     align-items: center;
     gap: 5px;
-}
-
-.rubbershop-benefits {
-    padding-top: 6.5rem;
 }
 
 .rubbershop-informations {
@@ -881,7 +878,7 @@ dialog .icon {
 
 .cards-rubbershop {
     width: 100%;
-    background: var(--bg-cards);
+    background: var(--ct-secundary);
 
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 
@@ -1420,14 +1417,6 @@ footer h1:nth-child(1) {
         grid-template-areas: "A B C D" "E F G H" "I J K L";
         grid-row-gap: 2.1rem;
         justify-items: center;
-    }
-
-    .parts-gallery-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: nowrap;
-        gap: 1.6rem;
     }
 
     .machine-parts h1 {
