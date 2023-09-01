@@ -49,7 +49,7 @@ header nav {
 
 .card-elevator {
     width: 31rem;
-    min-height: 40rem;
+    min-height: 43rem;
     background: #ffffff;
 
     display: flex;
@@ -64,6 +64,8 @@ header nav {
 .card-elevator img {
     max-width: 30rem;
     max-height: 20rem;
+
+    padding-top: .4rem;
 }
 
 .card-elevator h1 {
@@ -73,19 +75,6 @@ header nav {
 #free-instalation {
     flex-direction: row;
     gap: 7px;
-}
-
-.card-elevator h2 {
-    font-weight: normal;
-
-    padding-top: 1.6rem;
-
-    display: flex;
-}
-
-.card-elevator span {
-    font-size: 1.6rem;
-    padding-top: 8px;
 }
 
 .card-elevator div {
@@ -101,7 +90,7 @@ header nav {
     background: #38618C;
 
     padding: 1.4rem 7.2rem;
-    margin-bottom: 1.4rem;
+    margin-top: 1.4rem;
 
     display: flex;
     align-items: center;
