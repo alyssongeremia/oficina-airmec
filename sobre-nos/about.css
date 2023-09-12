@@ -23,7 +23,7 @@ main {
 }
 
 .about-container {
-    color: var(--ct-cards);
+    color: var(--ct-black);
     text-align: center;
 
     padding: 2.5rem 0;
@@ -32,7 +32,13 @@ main {
     border-radius: 10px;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+}
+
 .about-container h1 {
+    max-width: 60rem;
     font-size: 1.8rem;
     font-weight: normal;
     line-height: 2.4rem;
@@ -85,7 +91,7 @@ main {
 }
 
 .services-container .card {
-    max-width: 28rem;
+    min-width: 85%;
     height: 6.5rem;
     background: #c7c7c7;
 
@@ -101,7 +107,8 @@ main {
 .services-container .card h2 {
     min-width: 28rem;
     font-size: 1.8rem;
-    color: #1C3146;
+    font-weight: normal;
+    color: var(--ct-black);
     text-align: center;
 }
 
@@ -109,6 +116,10 @@ main {
 
     .about-container {
         padding: 3.5rem 0;
+    }
+
+    .services-container .card {
+        min-width: 100%;
     }
 
     .cards-wrapper {
@@ -127,6 +138,5 @@ main {
     .cards-services-wrapper {
         display: grid !important;
         grid-template-areas: "A B C";
-        justify-content: space-around;
     }
 }
