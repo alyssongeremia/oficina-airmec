@@ -29,7 +29,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
     background: var(--bg-secundary);
 }
@@ -236,6 +236,10 @@ nav img {
     margin-top: 3.4rem;
 }
 
+.useful-contacts .ph {
+    font-size: 3.2rem;
+}
+
 .useful-contacts:has(:hover) .card-contacts:not(:hover) {
     opacity: 0.5;
 }
@@ -392,7 +396,7 @@ dialog .icon {
 
 .cards-machine {
     width: 100%;
-    height: 35rem;
+    min-height: 35rem;
     background: var(--ct-secundary);
     
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
@@ -416,6 +420,7 @@ dialog .icon {
 
 .cards-machine ul {
     list-style-type: none;
+    font-size: 1.5rem;
     align-self: flex-start;
     padding-left: 2.4rem;
     
@@ -461,6 +466,11 @@ dialog .icon {
     transition: all 200ms ease-in-out;
 }
 
+.ph-whatsapp-logo {
+    font-size: 2.8rem;
+    color: var(--ct-secundary);
+}
+
 .buy-whats-link p {
     text-decoration: none;
     color: var(--ct-secundary);
@@ -497,7 +507,7 @@ dialog .icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1rem .8rem;
     flex-direction: column;
 
     scroll-snap-align: center;
@@ -521,6 +531,7 @@ dialog .icon {
 
 .horizontal-card ul {
     list-style-type: none;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -533,17 +544,15 @@ dialog .icon {
 }
 
 .horizontal-card img {
-    max-width: 20.2rem;
-    max-height: 12rem;
+    width: 14rem;
 }
 
 .whats-horizontal-card {
-    width: 94%;
+    width: 100%;
     height: 4.5rem;
     text-decoration: none;
     background: var(--bg-buttons);
     color: var(--ct-secundary);
-    font-weight: 600;
 
     margin-top: 10px;
 
@@ -655,7 +664,7 @@ dialog .icon {
 }
 
 .parts-container h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: normal;
     line-height: 2rem;
     color: #585858;
@@ -670,7 +679,7 @@ dialog .icon {
     flex-direction: column;
     align-items: center;
 
-    padding: .7rem .2rem;
+    padding: 2rem .2rem;
     margin: .4rem;
     border-radius: .2rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -712,14 +721,21 @@ dialog .icon {
 }
 
 .ticket-shop {
+    width: 100%;
     height: 6.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+    border: 1px solid var(--bg-secundary);
 }
 
-.ticket-shop:nth-child(4) {
-    margin-left: 1.5rem;
+.ticket-shop p {
+    line-height: 1.8rem;
+}
+
+.ticket-shop .ph {
+    font-size: 2.4rem;
 }
 
 .titles {
@@ -760,16 +776,22 @@ dialog .icon {
 
 .img-rubbershop span:nth-child(2) {
     background: var(--color-selection);
-    color: var(--bg-primary);
-    width: 23rem;
+    color: var(--ct-primary);
     height: 4.1rem;
 
     font-weight: bold;
+    padding: 0 .4rem;
+    border-radius: 10px 4px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+.img-rubbershop .ph {
+    font-size: 2.4rem;
+    color: var(--ct-primary);
 }
 
 .rubbershop-informations {
@@ -813,7 +835,7 @@ dialog .icon {
 }
 
 .tires-container h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: normal;
 
     padding: 0 0 1.4rem 10rem;
@@ -842,16 +864,27 @@ dialog .icon {
     align-items: center;
     justify-content: space-around;
 
-    scroll-snap-align: center;
+    scroll-snap-align: end;
 }
 
 .info-card-rubber {
-    width: 17rem;
+    width: 100%;
     height: 6.5rem;
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+
+    border: 1px solid var(--bg-secundary);
+}
+
+.info-card-rubber .ph {
+    font-size: 2.4rem;
+}
+
+.info-card-rubber span {
+    line-height: 1.8rem;
 }
 
 .rubbershop-wrapper {
@@ -892,7 +925,7 @@ dialog .icon {
 }
 
 .cards-rubbershop h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--ct-black);
     text-align: center;
@@ -1036,6 +1069,15 @@ footer h1:nth-child(1) {
     gap: 1rem;
 }
 
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links .ph {
+    font-size: 2.8rem;
+    color: var(--ct-secundary);
+}
+
 .cnpj-footer {
     font-size: 1.4rem;
 }
@@ -1066,6 +1108,10 @@ footer h1:nth-child(1) {
     background: #0F1924;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.move-to-top .ph {
+    font-size: 2.8rem;
 }
 
 .info-legal-wrapper {
@@ -1185,10 +1231,6 @@ footer h1:nth-child(1) {
     .page {
         width: 500px;
     }
-
-    .ticket-shop:nth-child(2) {
-        border: none;
-    }
 }
 
 @media(min-width: 700px) {
@@ -1243,8 +1285,8 @@ footer h1:nth-child(1) {
         padding: 0;
     }
 
-    .ticket-shop:nth-child(4) {
-        margin-left: 0;
+    .ticket-shop {
+        height: 8rem;
     }
 
     .cards-container {
@@ -1294,6 +1336,7 @@ footer h1:nth-child(1) {
 
     .info-card-rubber {
         justify-content: center;
+        height: 8rem;
     }
 
     .rubbershop-informations {
