@@ -108,3 +108,10 @@ cardsMachine.addEventListener('mouseover', () => {
 function offAnimation() {
     btnWhatsapp.classList.remove('animation')
 }
+
+const btnBorracharia = document.querySelector(".link-borracharia")
+
+btnBorracharia.addEventListener('click', () => {
+    menuMobile.id = "hidden";
+    btnHamburguer.classList.remove('hidden');
+})
