@@ -31,7 +31,7 @@ nav .ph-list {
     cursor: pointer;
 }
 
-details::-webkit-details-marker {
+details summary::webkit-details-marker {
     display: none;
 }
 
