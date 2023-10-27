@@ -130,6 +130,10 @@ nav img {
     gap: 3px;
 }
 
+#sub-header {
+    display: none;
+}
+
 .btn-products-menu {
     display: none;
 }
