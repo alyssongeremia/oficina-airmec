@@ -31,10 +31,6 @@ nav .ph-list {
     cursor: pointer;
 }
 
-details summary::webkit-details-marker {
-    display: none;
-}
-
 summary {
     all: unset;
     height: 100%;
@@ -45,6 +41,10 @@ summary {
     justify-content: space-between;
     padding: 1rem 1rem;
     cursor: pointer;
+}
+
+summary::-marker {
+    display: none;
 }
 
 details nav {
