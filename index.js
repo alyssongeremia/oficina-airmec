@@ -1,12 +1,17 @@
-const btnHamburguer = document.querySelector('.btn-hamburguer')
+const btnHamburguer = document.querySelector('.menu-categories')
 const btnClose = document.querySelector('.btn-close')
 const menuMobile = document.querySelector('.menu')
 
 btnHamburguer.addEventListener("click", function() {
-    btnHamburguer.classList.add('hidden')
     btnClose.classList.remove('hidden')
     menuMobile.id = ""
 })
+
+document.onkeydown = function(e) {
+    if(e.key === 'Escape') {
+        menuMobile.id = "hidden"
+    }
+}
 
 btnClose.addEventListener("click", function() {
     btnClose.classList.add('hidden')
