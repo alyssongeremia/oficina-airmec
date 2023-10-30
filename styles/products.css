@@ -1,0 +1,116 @@
+.container-products {
+    display: grid;
+    gap: 2.8rem;
+}
+
+.products {
+    padding-bottom: 4.8rem;
+}
+
+.products .cards {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+}
+
+.img-product {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.img-product img {
+    width: 20rem;
+}
+
+.description-products {
+    background: #c7c7c7;
+    padding: 1.6rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    border-radius:  0 0 8px 8px;
+}
+
+.title-products {
+    font-size: 1.4rem;
+    height: 4.2rem;
+}
+
+.link-category {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+}
+
+.link-category span:nth-child(1) {
+    font-size: 1.18rem;
+}
+
+.link-category a {
+    text-decoration: none;
+    max-width: 19rem;
+    font-size: 1.2rem;
+    padding: .8rem .8rem;
+    background: #585858;
+    color: #f5f5f5;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-out;
+}
+
+.link-category a:hover {
+    transform: translateY(-2px);
+}
+
+.delivery {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.delivery .ph-truck {
+    font-size: 2.2rem;
+}
+
+.btn-buy {
+    text-decoration: none;
+    color: #f5f5f5;
+    background: #38618c;
+    border-radius: 8px;
+    padding: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-out;
+}
+
+.btn-buy:hover {
+    background: #32577e;
+}
+
+@media(min-width: 768px) {
+    .container-products {
+        grid-template-areas: "A B" "C D";
+    }
+
+    .description-products span:nth-child(1) {
+        max-width: 22rem;
+    }
+}
+
+@media(min-width: 1000px) {
+    .container-products {
+        grid-template-areas: "A B C D";
+        gap: 1.6rem;
+    }
+}

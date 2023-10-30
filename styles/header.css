@@ -31,37 +31,46 @@ nav .ph-list {
     cursor: pointer;
 }
 
-summary {
-    all: unset;
-    height: 100%;
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+.accordion {
+    background-color: #dddddd;
+    cursor: pointer;
     font-size: 1.4rem;
     color: #2c2c2c;
+    padding: 1.6rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem;
-    cursor: pointer;
+
+    border-bottom: 1px solid #c7c7c7;
 }
 
-summary::-marker {
-    display: none;
+.active, .accordion:hover {
+    background-color: #c7c7c7;
 }
 
-details nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background: #c7c7c7;
-    padding-left: .8rem;
-}
-
-details nav a {
+.panel {
+    padding: 0 1.6rem;
+    background-color: #c7c7c7;
     width: 100%;
-    padding: 0;
-    transition: all 200ms;
+    color: #2c2c2c;
+    display: none;
+    overflow: hidden;
 }
 
-details nav a:hover {
+.panel a {
+    width: 100%;
+}
+
+.panel a:hover {
     background: #b1b1b1;
-    color: #000000;
 }

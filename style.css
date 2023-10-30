@@ -1,4 +1,6 @@
 @import url(./styles/header.css);
+@import url(./styles/products.css);
+@import url(./styles/categories.css);
 
 :root {
     --bg-primary: #1D3248;
@@ -130,10 +132,6 @@ nav img {
     gap: 3px;
 }
 
-#sub-header {
-    display: none;
-}
-
 .btn-products-menu {
     display: none;
 }
@@ -143,7 +141,7 @@ nav img {
 }
 
 .menu {
-    width: 80%;
+    width: 90%;
     max-width: 340px;
     height: 100vh;
 
@@ -179,11 +177,15 @@ nav img {
     color: #2c2c2c;
 
     font-size: 1.4rem;
-    padding: 1.2rem 1rem;
+    padding: 1.4rem 1rem;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.panel a + a {
+    border-top: 1px solid #d8d8d8;
 }
 
 .links {
