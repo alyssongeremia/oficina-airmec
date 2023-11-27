@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1D3248">
@@ -18,7 +19,7 @@
     <section id="sub-header">
         <div class="sub-header-wrapper page">
             <div class="sub-header">
-                <a href="#" class="products-menu-link offer-mobile">Oferta Disponível</a>
+                <a href="#" class="products-menu-link">Oferta Disponível</a>
             </div>
         </div>
     </section>
@@ -31,59 +32,99 @@
                     <a href="/"><img src="assets/logo-header-white.svg" alt="Logo da Oficina AirMec"></a>
                 </div>
                 <ul class="menu-desktop">
-                    <li><a href="/sobre-nos">Sobre nós</a></li>
-                    <li><a href="#borracharias" class="rubbershops">Borracharias</a></li>
                     <li><a href="#oficinas">Auto Center</a></li>
+                    <li><a href="#borracharias" class="rubbershops">Borracharias</a></li>
+                    <li><a href="/sobre-nos">Sobre nós</a></li>
                 </ul>
                 <div class="btn-products-menu">
-                    <a href="#" class="products-menu-link offer-desktop">Oferta Disponível</a>
+                    <a href="https://airmecchapeco.meloja.com.br/" class="shop-link">
+                        <i class="ph ph-shopping-cart"></i>
+                        Catálogo Online
+                    </a>
                 </div>
-                    <ul id="hidden" class="menu">
+                    <ul id="hidden" class="menu"> <!--menu-categories-->
                         <div class="menu-wrapper">
                             <div class="close-menu-mobile">
                                 <span>Categorias</span>
                                 <i class="ph ph-x btn-close"></i>
                             </div>
                             <div class="categories">
-                                <div>
-                                    <button class="accordion">
-                                        Alinhadores de Direção
-                                        <i class="ph ph-caret-down"></i>
-                                    </button>
-                                    <div class="panel">
-                                        <a href="#">Automóveis e utilitários</a>
-                                        <a href="#">Caminhões, ônibus e carretas</a>
-                                    </div>
-                                </div>
+                                <a href="https://encurtador.com.br/hkxUY" class="link-categories">Alinhadores de Direção</a>
                                 <div>
                                     <button class="accordion">
                                         Chaves de Impacto
                                         <i class="ph ph-caret-down"></i>
                                     </button>
                                     <div class="panel">
-                                        <a href="#" target="_blank">Pneumáticas</a>
-                                        <a href="#">A Bateria</a>
+                                        <a href="https://airmecchapeco.meloja.com.br/produtos/chaves-pneumaticas?category_id=252637" target="_blank">Pneumáticas</a>
+                                        <a href="https://encurtador.com.br/fzNZ4" target="_blank">A Bateria</a>
                                     </div>
                                 </div>
+                                <div>
+                                    <button class="accordion">
+                                        Borracharias em Geral
+                                        <i class="ph ph-caret-down"></i>
+                                    </button>
+                                    <div class="panel">
+                                        <a href="#">Assentadores de Talão</a>
+                                        <a href="#">Câmaras de Ar</a>
+                                        <a href="#">Bicos e Válvulas</a>
+                                        <a href="#">Chaves em Geral</a>
+                                        <a href="#">Contrapesos</a>
+                                        <a href="#">Cola Cimento</a>
+                                        <a href="#">Remendos para Pneus</a>
+                                        <a href="#">Reparos para Pneus</a>
+                                        <a href="#">Esmerilhadeira Retifica</a>
+                                        <a href="#">Pasta Desengraxante</a>
+                                        <a href="#">Protetor de Rodagem</a>
+                                        <a href="#">Pasta para Montagem de Pneus</a>
+                                    </div>
+                                </div>
+                                <a href="https://encurtador.com.br/yAQS7" target="_blank" class="link-categories">Compressores de Ar</a>
+                                <a href="https://encurtador.com.br/anoq5" target="_blank" class="link-categories">Calibradores de Ar</a>
+                                <a href="https://abre.ai/kit-de-cambagem" class="link-categories">Kit para Cambagem e Caster</a>
                                 <div>
                                     <button class="accordion">
                                         Ferramentas Elétricas
                                         <i class="ph ph-caret-down"></i>
                                     </button>
                                     <div class="panel">
-                                        <a href="#">Eletrosseras</a>
-                                        <a href="#">Furadeiras de Bancada</a>
-                                        <a href="#">Motoesmeril</a>
+                                        <a href="https://encurtador.com.br/ouw17">Furadeiras de Bancada</a>
+                                        <a href="https://encurtador.com.br/exTU9">Motoesmeril</a>
                                     </div>
                                 </div>
+                                <div>
+                                    <button class="accordion">
+                                        Ferramentas Manuais
+                                        <i class="ph ph-caret-down"></i>
+                                    </button>
+                                    <div class="panel">
+                                        <a href="#">Desempenadoras de Rodas</a>
+                                        <a href="#">Vulcanizadoras de Pneus</a>
+                                        <a href="#">Tornos de Bancada</a>
+                                    </div>
+                                </div>
+                                <a href="https://airmecchapeco.meloja.com.br/produtos/jogo-de-soquetes?category_id=335181" target="_blank" class="link-categories">Jogo de Soquetes</a>
                                 <div>
                                     <button class="accordion">
                                         Equipamentos de Solda
                                         <i class="ph ph-caret-down"></i>
                                     </button>
                                     <div class="panel">
-                                        <a href="#">Linha Power - Solda MIG</a>
+                                        <a href="https://abre.ai/inversor-mig" target="_blank">Linha Power - Solda MIG</a>
                                         <a href="#">Linha Hyper Power - Solda Alumínio</a>
+                                        <a href="https://abre.ai/inversor-eletrodos" target="_blank">Linha Standard - Eletrodos</a>
+                                        <a href="https://abre.ai/inversor-bivolt" target="_blank">Linha Power - Bivolt</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="accordion">
+                                        Macacos
+                                        <i class="ph ph-caret-down"></i>
+                                    </button>
+                                    <div class="panel">
+                                        <a href="https://abre.ai/macacos-hidraulicos" target="_blank">Hidráulicos</a>
+                                        <a href="https://abre.ai/macacos-pneumaticos" target="_blank">Pneumáticos</a>
                                     </div>
                                 </div>
                                 <div>
@@ -98,18 +139,13 @@
                                 </div>
                                 <div>
                                     <button class="accordion">
-                                        Borracharias
+                                        Equipamentos Hidráulicos
                                         <i class="ph ph-caret-down"></i>
                                     </button>
                                     <div class="panel">
-                                        <a href="#">Reparos para Pneus</a>
-                                        <a href="#">Câmaras de Ar</a>
-                                        <a href="#">Remendos para Pneus</a>
-                                        <a href="#">Pasta Desengraxante</a>
-                                        <a href="#">Válvulas</a>
-                                        <a href="#">Cola Vulcanizante</a>
-                                        <a href="#">Microesferas para Balanceamento</a>
-                                        <a href="#">Pasta para Montagem de Pneus</a>
+                                        <a href="https://abre.ai/guinchos" target="_blank">Guinchos</a>
+                                        <a href="#">Prensas</a>
+                                        <a href="https://abre.ai/propulsoras-de-graxa" target="_blank">Propulsoras</a>
                                     </div>
                                 </div>
                             </div>
@@ -155,9 +191,7 @@
             <div class="card-offer">
                 <div class="close-offer">
                     <div class="icon">
-                        <svg width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.00042 1.00042C1.08002 0.920614 1.17459 0.857297 1.2787 0.814096C1.38281 0.770894 1.49443 0.748657 1.60714 0.748657C1.71986 0.748657 1.83148 0.770894 1.93559 0.814096C2.0397 0.857297 2.13427 0.920614 2.21387 1.00042L6.74888 5.53715L11.2839 1.00042C11.3636 0.920744 11.4582 0.857541 11.5623 0.81442C11.6664 0.7713 11.7779 0.749106 11.8906 0.749106C12.0033 0.749106 12.1149 0.7713 12.219 0.81442C12.3231 0.857541 12.4177 0.920744 12.4973 1.00042C12.577 1.0801 12.6402 1.17469 12.6833 1.27879C12.7265 1.38289 12.7487 1.49447 12.7487 1.60714C12.7487 1.71982 12.7265 1.8314 12.6833 1.9355C12.6402 2.0396 12.577 2.13419 12.4973 2.21387L7.96062 6.74888L12.4973 11.2839C12.577 11.3636 12.6402 11.4582 12.6833 11.5623C12.7265 11.6664 12.7487 11.7779 12.7487 11.8906C12.7487 12.0033 12.7265 12.1149 12.6833 12.219C12.6402 12.3231 12.577 12.4177 12.4973 12.4973C12.4177 12.577 12.3231 12.6402 12.219 12.6833C12.1149 12.7265 12.0033 12.7487 11.8906 12.7487C11.7779 12.7487 11.6664 12.7265 11.5623 12.6833C11.4582 12.6402 11.3636 12.577 11.2839 12.4973L6.74888 7.96062L2.21387 12.4973C2.13419 12.577 2.0396 12.6402 1.9355 12.6833C1.8314 12.7265 1.71982 12.7487 1.60714 12.7487C1.49447 12.7487 1.38289 12.7265 1.27879 12.6833C1.17469 12.6402 1.0801 12.577 1.00042 12.4973C0.920744 12.4177 0.857541 12.3231 0.81442 12.219C0.7713 12.1149 0.749106 12.0033 0.749106 11.8906C0.749106 11.7779 0.7713 11.6664 0.81442 11.5623C0.857541 11.4582 0.920744 11.3636 1.00042 11.2839L5.53715 6.74888L1.00042 2.21387C0.920614 2.13427 0.857297 2.0397 0.814096 1.93559C0.770894 1.83148 0.748657 1.71986 0.748657 1.60714C0.748657 1.49443 0.770894 1.38281 0.814096 1.2787C0.857297 1.17459 0.920614 1.08002 1.00042 1.00042Z" fill="#1D3248"/>
-                        </svg>
+                        <i class="ph ph-x"></i>
                     </div>
                 </div>
                 <img src="assets/offers/oferta-combo.png" alt="Imagem de uma chave de impacto e uma mangueira espiral que são utilizadas em conjunto">
@@ -174,10 +208,10 @@
         </dialog>
 
         <section class="useful-contacts page">
-                <a href="https://airmecchapeco.meloja.com.br/" target="_blank" class="card-contacts">
+                <a href="#" class="card-contacts offer-mobile">
                     <div>
-                        <i class="ph ph-shopping-cart"></i>
-                        <span>Acessar Loja Online</span>
+                        <i class="ph ph-percent"></i>
+                        <span>Oferta Disponível</span>
                     </div>
                 </a>
                 <a href="./alugue/" class="card-contacts">
@@ -198,33 +232,47 @@
         </section>
 
         <section class="categories-products page">
-            <h1 class="titles">Mais Procurados</h1>
-            <div class="categories-container">
-                <a href="#" class="categories-card">
+            <div class="controls-categories">
+                <h1 class="titles">Mais Procurados</h1>
+                <div class="controls-wrapper controls control">
+                    <button title="Voltar"><i class="ph ph-caret-left arrow-left"></i></button>
+                    <button title="Próximo"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </div>
+            <div class="categories-container dragscroll itens">
+                <a href="https://abre.ai/alinhadores-3d" target="_blank" class="categories-card item current-item">
                     <img src="assets/categories/alinhadores.png" alt="Alinhadores de Direção">
                     <span>Alinhadores de Direção</span>
                 </a>
-                <a href="#" class="categories-card">
+                <a href="https://abre.ai/elevadores-automotivos" target="_blank" class="categories-card item">
                     <img src="assets/categories/elevadores.png" alt="Elevadores Automotivos">
                     <span>Elevadores Automotivos</span>
                 </a>
-                <a href="#" class="categories-card">
+                <a href="https://abre.ai/desmontadoras-de-rodas" target="_blank" class="categories-card item">
                     <img src="assets/categories/desmontadoras.png" alt="Desmontadoras de Rodas">
                     <span>Desmontadoras de Rodas</span>
                 </a>
-                <a href="#" class="categories-card">
+                <a href="https://abre.ai/balanceadoras" target="_blank" class="categories-card item">
                     <img src="assets/categories/balanceadoras.png" alt="Balanceadoras de Rodas">
                     <span>Balanceadoras de Rodas</span>
                 </a>
-                <a href="#" class="categories-card">
+                <a href="https://abre.ai/kit-de-cambagem" target="_blank" class="categories-card item">
+                    <img src="assets/categories/kit-cambagem.png" alt="Compressores de Ar">
+                    <span>Kit para Cambagem e Caster</span>
+                </a>
+                <a href="https://abre.ai/compressores-de-ar" target="_blank" class="categories-card item">
                     <img src="assets/categories/compressores.png" alt="Compressores de Ar">
                     <span>Compressores de Ar</span>
                 </a>
-                <a href="#" class="categories-card">
+                <a href="https://abre.ai/chaves-pneumaticas" target="_blank" class="categories-card item">
                     <img src="assets/categories/chave-penumatica.png" alt="Chaves Pneumáticas">
                     <span>Chaves Pneumáticas</span>
                 </a>
-                <a href="#" class="categories-card">
+                <a href="https://abre.ai/chaves-a-bateria" target="_blank" class="categories-card item">
+                    <img src="assets/categories/chave-bateria.png" alt="Chaves de impacto a bateria">
+                    <span>Chaves a Bateria</span>
+                </a>
+                <a href="https://abre.ai/categ-macacos-hidra" target="_blank" class="categories-card item">
                     <img src="assets/categories/macacos.png" alt="Macacos Hidráulicos">
                     <span>Macacos Hidráulicos</span>
                 </a>
@@ -267,13 +315,13 @@
                         <span class="title-products">Chave de impacto 3/4" 4300 Rpm Curta </span>
                         <div class="link-category">
                             <span>Clique e confira outros produtos</span>
-                            <a href="#">Chaves Pneumáticas</a>
+                            <a href="https://abre.ai/chaves-pneumaticas">Chaves Pneumáticas</a>
                         </div>
                         <div class="delivery">
                             <i class="ph ph-truck"></i>
                             <span>Pronta Entrega Disponível</span>
                         </div>
-                        <a href="#" class="btn-buy">Comprar Agora</a>
+                        <a href="https://abre.ai/pneumatica-34" class="btn-buy">Ver detalhes</a>
                     </div>
                 </div>
                 <div class="cards">
@@ -284,18 +332,36 @@
                         <span class="title-products" >Macaco Jacaré 2 Ton </span>
                         <div class="link-category">
                             <span>Clique e confira outros produtos</span>
-                            <a href="#">Macacos Hidráulicos</a>
+                            <a href="https://abre.ai/categ-macacos-hidra">Macacos Hidráulicos</a>
                         </div>
                         <div class="delivery">
                             <i class="ph ph-truck"></i>
                             <span>Pronta Entrega Disponível</span>
                         </div>
-                        <a href="#" class="btn-buy">Comprar Agora</a>
+                        <a href="https://abre.ai/macaco-2ton" class="btn-buy">Ver detalhes</a>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="img-product">
-                        <img src="assets/cards-machine/prensa-hidraulica.webp" alt="Prensa Hidráulica de 15 toneladas">
+                        <img src="assets/cards-machine/desmontadora-de-rodas-local.png" alt="Desmontadora de rodas">
+                        <span class="stamp">Novidade</span>
+                    </div>
+                    <div class="description-products">
+                        <span class="title-products">Desmontadora de Rodas para Caminhões e Carretas </span>
+                        <div class="link-category">
+                            <span>Clique e confira outros produtos</span>
+                            <a href="https://airmecchapeco.meloja.com.br/produtos/desmontadoras-de-rodas?category_id=252636">Desmontadoras de Rodas</a>
+                        </div>
+                        <div class="delivery">
+                            <i class="ph ph-truck"></i>
+                            <span>Entrega a combinar</span>
+                        </div>
+                        <a href="https://airmecchapeco.meloja.com.br/produto/desmontadora-de-rodas-de-caminhoes/928712?vid=1339933" class="btn-buy">Ver detalhes</a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img-product">
+                        <img src="assets/cards-machine/prensa-hidraulica.png" alt="Prensa Hidráulica de 15 toneladas">
                     </div>
                     <div class="description-products">
                         <span class="title-products" >Prensa Hidráulica 15 Ton </span>
@@ -307,7 +373,7 @@
                             <i class="ph ph-truck"></i>
                             <span>Pronta Entrega Disponível</span>
                         </div>
-                        <a href="#" class="btn-buy">Comprar Agora</a>
+                        <a href="#" class="btn-buy">Ver detalhes</a>
                     </div>
                 </div>
                 <div class="cards">
@@ -317,19 +383,54 @@
                     <div class="description-products">
                         <span class="title-products" >Compressor de Ar Profissional 10 Pés</span>
                         <div class="link-category">
-                            <span>Clique e confira outros produtos</span>
-                            <a href="#">Compressores de Ar</a>
+                            <span>Clique e confira outros modelos</span>
+                            <a href="https://airmecchapeco.meloja.com.br/produtos?category_id=301286">Compressores de Ar</a>
                         </div>
                         <div class="delivery">
                             <i class="ph ph-truck"></i>
                             <span>Pronta Entrega Disponível</span>
                         </div>
-                        <a href="#" class="btn-buy">Comprar Agora</a>
+                        <a href="https://airmecchapeco.meloja.com.br/produto/compressor-de-ar-profissional-leve-10-pes/969556?vid=1394116" class="btn-buy">Ver detalhes</a>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="img-product">
-                        <img src="assets/cards-machine/macaco-hidraulico-bovenau.webp" alt="Macaco Hidropneumático 32 toneladas">
+                        <img src="assets/cards-machine/balanceadora-local.png" alt="Balanceadora de Rodas Local - Linha Pesada">
+                        <span class="stamp">Novidade</span>
+                    </div>
+                    <div class="description-products">
+                        <span class="title-products">Balanceadora de Rodas Local - Linha Pesada</span>
+                        <div class="link-category">
+                            <span>Clique e confira outros produtos</span>
+                            <a href="https://airmecchapeco.meloja.com.br/produtos/balanceadoras-de-rodas?category_id=252635">Balanceadoras de Rodas</a>
+                        </div>
+                        <div class="delivery">
+                            <i class="ph ph-truck"></i>
+                            <span>Entrega a Combinar</span>
+                        </div>
+                        <a href="https://airmecchapeco.meloja.com.br/produto/balanceadora-de-rodas-local-linha-pesada/871004?vid=1264330" class="btn-buy">Ver detalhes</a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img-product">
+                        <img src="assets/cards-machine/pneumatica-longa.png" alt="Chave de impacto longa 500 kg">
+                    </div>
+                    <div class="description-products">
+                        <span class="title-products" >Chave de impacto 1" Longa 500 kg</span>
+                        <div class="link-category">
+                            <span>Clique e confira outros produtos</span>
+                            <a href="#">Chaves Pneumáticas</a>
+                        </div>
+                        <div class="delivery">
+                            <i class="ph ph-truck"></i>
+                            <span>Pronta Entrega Disponível</span>
+                        </div>
+                        <a href="#" class="btn-buy">Ver detalhes</a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img-product">
+                        <img src="assets/cards-machine/macaco-32ton.png" alt="Macaco Hidropneumático 32 toneladas">
                     </div>
                     <div class="description-products">
                         <span class="title-products" >Macaco Hidropneumático 32 Ton</span>
@@ -341,24 +442,7 @@
                             <i class="ph ph-truck"></i>
                             <span>Pronta Entrega Disponível</span>
                         </div>
-                        <a href="#" class="btn-buy">Comprar Agora</a>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="img-product">
-                        <img src="assets/cards-machine/rampa-para-alinhamento.png" alt="Rampa para Alinhamento">
-                    </div>
-                    <div class="description-products">
-                        <span class="title-products" >Rampa Pneumática para Alinhamento</span>
-                        <div class="link-category">
-                            <span>Clique e confira outros produtos</span>
-                            <a href="#">Rampas de Geometria</a>
-                        </div>
-                        <div class="delivery">
-                            <i class="ph ph-truck"></i>
-                            <span>Pronta Entrega Disponível</span>
-                        </div>
-                        <a href="#" class="btn-buy">Comprar Agora</a>
+                        <a href="#" class="btn-buy">Ver detalhes</a>
                     </div>
                 </div>
                 <div class="cards">
@@ -375,269 +459,58 @@
                             <i class="ph ph-truck"></i>
                             <span>Pronta Entrega Disponível</span>
                         </div>
-                        <a href="#" class="btn-buy">Comprar Agora</a>
+                        <a href="#" class="btn-buy">Ver detalhes</a>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="img-product">
-                        <img src="assets/cards-machine/Balanceadora-ibb.png" alt="Balanceadora de Rodas Motorizada">
+                        <img src="assets/cards-machine/guincho-hidraulico.png" alt="Guincho hidráulico desmontável 2 toneladas">
                     </div>
                     <div class="description-products">
-                        <span class="title-products" >Balanceadora de Rodas Motorizada </span>
+                        <span class="title-products" >Guincho Hidráulico Desmontável 2 Ton  </span>
                         <div class="link-category">
                             <span>Clique e confira outros produtos</span>
-                            <a href="#">Balanceadoras de Rodas</a>
+                            <a href="#">Guinchos Hidráulicos</a>
                         </div>
                         <div class="delivery">
                             <i class="ph ph-truck"></i>
                             <span>Pronta Entrega Disponível</span>
                         </div>
-                        <a href="#" class="btn-buy">Comprar Agora</a>
+                        <a href="#" class="btn-buy">Ver detalhes</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="machine-equipment-wrapper">
-            <div class="machine-equipment page">
-                <div class="gallery-cards-machine">
-                    <div class="cards-machine">
-                        <div>
-                            <img src="assets/cards-machine/alinhador3d.webp" alt="Imagem de um alinhador 3d">
-                            <h1>Alinhadores de Direção 3d</h1>
-                        </div>
-                        <ul>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Automóveis e Utilitários
-                            </li>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Tecnologia 3d
-                            </li>
-                        </ul>
-                        <a href="https://wa.link/rc6ytf" target="_blank" class="buy-whats-link">
-                            <i class="ph ph-arrow-square-out"></i>
-                            <p>Ver detalhes</p>
-                        </a>
+                <div class="cards">
+                    <div class="img-product">
+                        <img src="assets/cards-machine/macaco-telescopico.png" alt="Macaco telescopico para câmbio">
                     </div>
-                    <div class="cards-machine">
-                        <div>
-                            <img src="assets/cards-machine/balanceadora-de-rodas.webp" alt="Imagem de uma balanceadora de rodas">
-                            <h1>Balanceadoras de Rodas</h1>
+                    <div class="description-products">
+                        <span class="title-products" >Macaco Telescópico para Câmbio  </span>
+                        <div class="link-category">
+                            <span>Clique e confira outros produtos</span>
+                            <a href="#">Macacos Hidráulicos</a>
                         </div>
-                        <ul>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Automáticas
-                            </li>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Manuais
-                            </li>
-                        </ul>
-                        <a href="https://airmecchapeco.meloja.com.br/produtos/balanceadoras-de-rodas?category_id=252635" target="_blank" class="buy-whats-link">
-                            <i class="ph ph-arrow-square-out"></i>
-                            <p>Ver detalhes</p>
-                        </a>
-                    </div>
-                    <div class="cards-machine">
-                        <div>
-                            <img src="assets/cards-machine/desmontadora-de-rodas.webp" alt="Imagem de uma desmontadora de rodas">
-                            <h1>Desmontadoras de Rodas</h1>
+                        <div class="delivery">
+                            <i class="ph ph-truck"></i>
+                            <span>Pronta Entrega Disponível</span>
                         </div>
-                        <ul>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Pneumáticas
-                            </li>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Mecânicas
-                            </li>
-                        </ul>
-                        <a href="https://wa.link/3yg3g1" target="_blank" class="buy-whats-link">
-                            <i class="ph-light ph-whatsapp-logo"></i>
-                            <p>Solicitar Orçamento</p>
-                        </a>
-                    </div>
-                    <div class="cards-machine">
-                        <div>
-                            <img src="assets/cards-machine/elevador.png" alt="Imagem de um elevador automotivo">
-                            <h1>Elevadores Automotivos</h1>
-                        </div>
-                        <ul>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                2.500 Kg
-                            </li>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                4.000 Kg
-                            </li>
-                        </ul>
-                        <a href="https://wa.link/czt68v" target="_blank" class="buy-whats-link">
-                            <i class="ph-light ph-whatsapp-logo"></i>
-                            <p>Solicitar Orçamento</p>
-                        </a>
-                    </div>
-                    <div class="cards-machine">
-                        <div>
-                            <img src="assets/cards-machine/chave-pneumatica-rotta376.webp" alt="Imagem de uma chave de impacto">
-                            <h1>Chaves Pneumáticas</h1>
-                        </div>
-                        <ul>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Pneumáticas
-                            </li>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Elétricas ou À bateria
-                            </li>
-                        </ul>
-                        <a href="https://wa.link/n4yju4" class="buy-whats-link" target="_blank">
-                            <i class="ph-light ph-whatsapp-logo"></i>
-                            <p>Solicitar Orçamento</p>
-                        </a>
-                    </div>
-                    <div class="cards-machine">
-                        <div>
-                            <img src="assets/cards-machine/compressor-de-ar-atlas.webp" alt="Imagem de um compressor de ar">
-                            <h1>Compressores de Ar</h1>
-                        </div>
-                        <ul>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                10, 20, 40, 60 Pés
-                            </li>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Industriais
-                            </li>
-                        </ul>
-                        <a href="https://wa.link/mv0tjz" class="buy-whats-link" target="_blank"> 
-                            <i class="ph-light ph-whatsapp-logo"></i>
-                            <p>Solicitar Orçamento</p>
-                        </a>
-                    </div>
-                    <div class="cards-machine">
-                        <div>
-                            <img src="assets/cards-machine/macaco-hidraulico-bovenau.webp" alt="Imagem de um macaco hidráulico">
-                            <h1>Macacos Hidráulicos</h1>
-                        </div>
-                        <ul>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                2, 6, 8, 32 ton
-                            </li>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Pneumáticos
-                            </li>
-                        </ul>
-                        <a href="https://wa.link/s99x15" target="_blank" class="buy-whats-link">
-                            <i class="ph-light ph-whatsapp-logo"></i>
-                            <p>Solicitar Orçamento</p>
-                        </a>
-                    </div>
-                    <div class="cards-machine">
-                        <div>
-                            <img src="assets/cards-machine/calibrador-premium.webp" alt="Imagem de um calibrador de pneus">
-                            <h1>Calibradores de Ar</h1>
-                        </div>
-                        <ul>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Eletrônicos
-                            </li>
-                            <li>
-                                <i class="ph ph-caret-right"></i>
-                                Analógicos
-                            </li>
-                        </ul>
-                        <a href="https://wa.link/5ged3h" target="_blank" class="buy-whats-link">
-                            <i class="ph-light ph-whatsapp-logo"></i>
-                            <p>Solicitar Orçamento</p>
-                        </a>
+                        <a href="#" class="btn-buy">Ver detalhes</a>
                     </div>
                 </div>
-
-                <div class="outher-machines">
-                    <h1>Equipamentos indispensáveis</h1>
-                    <div class="horizontal-cards-wrapper">
-                        <div class="horizontal-card">
-                            <div>
-                                <img src="assets/cards-machine/macaco-cambio.webp" alt="Imagem de um macaco hidráulico, equipamento utilizado para suspender as caixas de direção de automoveis nas oficinas mecânicas">
-                                <div class="title-horizontal-card">
-                                    <h2>Macacos para câmbios</h2>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                <i class="ph ph-caret-right"></i>
-                                                Hidráulicos
-                                            </li>
-                                            <li>
-                                                <i class="ph ph-caret-right"></i>
-                                                Telescópicos
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" target="_blank" class="whats-horizontal-card">
-                                <i class="ph-light ph-whatsapp-logo"></i>
-                                <p>Solicitar Orçamento</p>
-                            </a>
+                <div class="cards">
+                    <div class="img-product">
+                        <img src="assets/cards-machine/conj-propulsora.png" alt="Conjunto Propulsora de Óleo">
+                    </div>
+                    <div class="description-products">
+                        <span class="title-products">Conjunto Completo Propulsora de Óleo</span>
+                        <div class="link-category">
+                            <span>Clique e confira outros produtos</span>
+                            <a href="#">Equipamentos Hidráulicos</a>
                         </div>
-                        <div class="horizontal-card">
-                            <div>
-                                <img src="assets/cards-machine/guincho-hidraulico.webp" alt="Imagem de um guincho hidráulico, equipamento utilizado principalmente para suspender o motor dos automóveis nas oficinas mecânicas">
-                                <div class="title-horizontal-card">
-                                    <h2>Guinchos Hidráulicos</h2>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                <i class="ph ph-caret-right"></i>
-                                                Elétricos
-                                            </li>
-                                            <li>
-                                                <i class="ph ph-caret-right"></i>
-                                                Mecânicos
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" target="_blank" class="whats-horizontal-card">
-                                <i class="ph-light ph-whatsapp-logo"></i>
-                                <p>Solicitar Orçamento</p>
-                            </a>
+                        <div class="delivery">
+                            <i class="ph ph-truck"></i>
+                            <span>Pronta Entrega Disponível</span>
                         </div>
-                        <div class="horizontal-card">
-                            <div>
-                                <img src="assets/cards-machine/prensa-hidraulica.webp" alt="Imagem de uma prensa hidráulica, equipamento utilizado para prensar materiais">
-                                <div class="title-horizontal-card">
-                                    <h2>Prensas Hidráulicas</h2>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                <i class="ph ph-caret-right"></i>
-                                                10, 15, 30 Ton
-                                            </li>
-                                            <li>
-                                                <i class="ph ph-caret-right"></i>
-                                                60 Ton
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" target="_blank" class="whats-horizontal-card">
-                                <i class="ph-light ph-whatsapp-logo"></i>
-                                <p>Solicitar Orçamento</p>
-                            </a>
-                        </div>
+                        <a href="#" class="btn-buy">Ver detalhes</a>
                     </div>
                 </div>
             </div>
@@ -764,38 +637,48 @@
             <div class="tires-container">
                 <h1>Aqui você encontra Pneus para</h1>
                 <div class="tires-gallery">
-                    <div class="card-tire">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#121214" viewBox="0 0 256 256"><path d="M240,112H211.31L168,68.69A15.86,15.86,0,0,0,156.69,64H44.28A16,16,0,0,0,31,71.12L1.34,115.56A8.07,8.07,0,0,0,0,120v48a16,16,0,0,0,16,16H33a32,32,0,0,0,62,0h66a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V128A16,16,0,0,0,240,112ZM44.28,80H156.69l32,32H23ZM64,192a16,16,0,1,1,16-16A16,16,0,0,1,64,192Zm128,0a16,16,0,1,1,16-16A16,16,0,0,1,192,192Zm48-24H223a32,32,0,0,0-62,0H95a32,32,0,0,0-62,0H16V128H240Z"></path></svg>
-                        <span>Carros</span>
-                    </div>
+                    <a href="#">
+                        <div class="card-tire">
+                            <i class="ph ph-car-profile"></i>
+                            <span>Carros</span>
+                        </div>
+                    </a>
 
-                    <div class="card-tire">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#121214" viewBox="0 0 256 256"><path d="M216,120a41,41,0,0,0-6.6.55l-5.82-15.14A55.64,55.64,0,0,1,216,104a8,8,0,0,0,0-16H196.88L183.47,53.13A8,8,0,0,0,176,48H144a8,8,0,0,0,0,16h26.51l9.23,24H152c-18.5,0-33.5,4.31-43.37,12.46a16,16,0,0,1-16.76,2.07C81.29,97.72,31.13,77.33,26.71,75.6L21,73.36A17.74,17.74,0,0,0,16,72a8,8,0,0,0-2.87,15.46h0c.46.18,47.19,18.3,72.13,29.63a32.15,32.15,0,0,0,33.56-4.29c4.86-4,14.57-8.8,33.19-8.8h18.82a71.74,71.74,0,0,0-24.17,36.59A15.86,15.86,0,0,1,131.32,152H79.2a40,40,0,1,0,0,16h52.12a31.91,31.91,0,0,0,30.74-23.1,56,56,0,0,1,26.59-33.72l5.82,15.13A40,40,0,1,0,216,120ZM40,168H62.62a24,24,0,1,1,0-16H40a8,8,0,0,0,0,16Zm176,16a24,24,0,0,1-15.58-42.23l8.11,21.1a8,8,0,1,0,14.94-5.74L215.35,136l.65,0a24,24,0,0,1,0,48Z"></path></svg>
-                        <span>Motos</span>
-                    </div>
+                    <a href="#">
+                        <div class="card-tire">
+                            <i class="ph ph-motorcycle"></i>
+                            <span>Motos</span>
+                        </div>
+                    </a>
 
-                    <div class="card-tire">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#121214" viewBox="0 0 256 256"><path d="M247.42,117l-14-35A15.93,15.93,0,0,0,218.58,72H184V64a8,8,0,0,0-8-8H24A16,16,0,0,0,8,72V184a16,16,0,0,0,16,16H41a32,32,0,0,0,62,0h50a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V120A7.94,7.94,0,0,0,247.42,117ZM184,88h34.58l9.6,24H184ZM24,72H168v64H24ZM72,208a16,16,0,1,1,16-16A16,16,0,0,1,72,208Zm81-24H103a32,32,0,0,0-62,0H24V152H168v12.31A32.11,32.11,0,0,0,153,184Zm31,24a16,16,0,1,1,16-16A16,16,0,0,1,184,208Zm48-24H215a32.06,32.06,0,0,0-31-24V128h48Z"></path></svg>
-                        <span>Caminhões</span>
-                    </div>
+                    <a href="#">
+                        <div class="card-tire">
+                            <i class="ph ph-truck"></i>
+                            <span>Caminhões</span>
+                        </div>
+                    </a>
 
-                    <div class="card-tire">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="32" height="32" fill="url(#pattern0)"/>
-                            <defs>
-                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                            <use xlink:href="#image0_907_22" transform="scale(0.015625)"/>
-                            </pattern>
-                            <image id="image0_907_22" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB2AAAAdgB+lymcgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAN8SURBVHic7ZpfaE5hHMc/m4WQvP5nuUKaptS7KckFSahdKKGlXChl/tTcKBEXFMUNGeVmxY0/F3LB/AllDWmlTVnNBbOy0sy/CYvXxfOe9pzf+fOef+/2nnk+dWrnPM/v9/zO9/c8v3PO8w4MBoPBYDAYDAaD4T+kDLgfsG8/8BC4Avzw6BPUV0mRC3n0AMsT8jXqR1n+j7B8zovQ7SJAqiiPaDcNOJ1kIKVOBbAO+Mbw9BlCCaGjT69HIxmgIIOanXo8r4ApcR2fF05rRXspCDAOuCNi+QQsdOscdgl8FOeTw0Y3AhwH1mvnf4HtwBu3zlFrQKmyCTgorh0GbnsZjCUBqoBm1LuNxU3gpJ/RWBEgA9wCpmrXuoAdFHg0jwUBylFvp3qRGwDqgK9BjNPOCWCjdu5b9CRpFyB00ZOkWYBIRU+SVgEiFz1JGgWIVfTcnKWNWEVPElYAuREyM8qgMdiMs+gdIUTRi0sd9o+MTmCJ1l7Mj6Fq7F+jOeAG9iJYdCYBfSKI0To6sX/eTgf2A/eAXuBXPtbnwDFgUVIibEGtu9EWYF8+njKgEVUI/foPARdIYE8AYCcwWAIiNANXQ9p0APOtG4mzfipRz91ahlVdq7UPAO0etmuwF+AXwJcC41UAq1AbHoV4j1oGGWAxzvvsAFYC3wP4CkWQIrhB9OsBJgT0vwJ4jXd2W4BlwmYecBbnsm0KOGYoggjwTPTbHXKMicAZnDffhP9jvR67CEN4bJPFoZAAcbKvs1r4ace5NGa42J0TdkcjjO1LIQHiZt/ilPCzTbRnUb9kNYjrldhnwdOI43viJ0BS2Qe4JnzN1dqyqF3gHOpmpQhdml1fxPE98RMgqewD3BW+dCFbRVs/6iXJok1r+xkjBle8BEgy+wCXhb8FWtss1GMux/BPeDq9mt27GDG44iVAktkHOCT8NYr22cAToEZczwq7lphxOHATIOnsAywVPj9Q+Mu0HHgg7PbEjMOBmwBJZ9/isfDbhrcIFcBF0b8f52+bsZECFCP7FjXAb+G/DziA+vIbj3oLrAdein45YG9CcdiQg8gjqexbNAQY0+24TpH2EfwGTTL7OrtwzgS/4xJqdhSFkcy+Tha15PzG70ZtqdlIehp4/ZPUILAVtUtTTKpR23ZVwBzUG+Fb1OOuFfhT5PENBoPBYDAYDAaDIR38A6kAHwcICEjcAAAAAElFTkSuQmCC"/>
-                            </defs>
-                        </svg>                            
-                        <span>Carrinhos</span>
-                    </div>
+                    <a href="https://airmecchapeco.meloja.com.br/produtos/pneus/carrinhos?order=&term=&category_id=333822" target="_blank">
+                        <div class="card-tire">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="32" height="32" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_907_22" transform="scale(0.015625)"/>
+                                </pattern>
+                                <image id="image0_907_22" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB2AAAAdgB+lymcgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAN8SURBVHic7ZpfaE5hHMc/m4WQvP5nuUKaptS7KckFSahdKKGlXChl/tTcKBEXFMUNGeVmxY0/F3LB/AllDWmlTVnNBbOy0sy/CYvXxfOe9pzf+fOef+/2nnk+dWrnPM/v9/zO9/c8v3PO8w4MBoPBYDAYDAaD4T+kDLgfsG8/8BC4Avzw6BPUV0mRC3n0AMsT8jXqR1n+j7B8zovQ7SJAqiiPaDcNOJ1kIKVOBbAO+Mbw9BlCCaGjT69HIxmgIIOanXo8r4ApcR2fF05rRXspCDAOuCNi+QQsdOscdgl8FOeTw0Y3AhwH1mvnf4HtwBu3zlFrQKmyCTgorh0GbnsZjCUBqoBm1LuNxU3gpJ/RWBEgA9wCpmrXuoAdFHg0jwUBylFvp3qRGwDqgK9BjNPOCWCjdu5b9CRpFyB00ZOkWYBIRU+SVgEiFz1JGgWIVfTcnKWNWEVPElYAuREyM8qgMdiMs+gdIUTRi0sd9o+MTmCJ1l7Mj6Fq7F+jOeAG9iJYdCYBfSKI0To6sX/eTgf2A/eAXuBXPtbnwDFgUVIibEGtu9EWYF8+njKgEVUI/foPARdIYE8AYCcwWAIiNANXQ9p0APOtG4mzfipRz91ahlVdq7UPAO0etmuwF+AXwJcC41UAq1AbHoV4j1oGGWAxzvvsAFYC3wP4CkWQIrhB9OsBJgT0vwJ4jXd2W4BlwmYecBbnsm0KOGYoggjwTPTbHXKMicAZnDffhP9jvR67CEN4bJPFoZAAcbKvs1r4ace5NGa42J0TdkcjjO1LIQHiZt/ilPCzTbRnUb9kNYjrldhnwdOI43viJ0BS2Qe4JnzN1dqyqF3gHOpmpQhdml1fxPE98RMgqewD3BW+dCFbRVs/6iXJok1r+xkjBle8BEgy+wCXhb8FWtss1GMux/BPeDq9mt27GDG44iVAktkHOCT8NYr22cAToEZczwq7lphxOHATIOnsAywVPj9Q+Mu0HHgg7PbEjMOBmwBJZ9/isfDbhrcIFcBF0b8f52+bsZECFCP7FjXAb+G/DziA+vIbj3oLrAdein45YG9CcdiQg8gjqexbNAQY0+24TpH2EfwGTTL7OrtwzgS/4xJqdhSFkcy+Tha15PzG70ZtqdlIehp4/ZPUILAVtUtTTKpR23ZVwBzUG+Fb1OOuFfhT5PENBoPBYDAYDAaDIR38A6kAHwcICEjcAAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>
+                            <span>Carrinhos</span>
+                        </div>
+                    </a>
                     
-                    <div class="card-tire">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M7 5v7.25c-1.348.305-2.582.883-3.625 1.719l1.25 1.562A6.957 6.957 0 0 1 9 14c3.879 0 7 3.121 7 7h4.563A3.93 3.93 0 0 0 20 23c0 2.2 1.8 4 4 4s4-1.8 4-4c0-1.027-.418-1.945-1.063-2.656l2-4.969l.063-.188V13h-5v-3c0-.566.434-1 1-1V7c-1.645 0-3 1.355-3 3v3h-3.313l-2.75-7.344l-.25-.656zm2 2h5.313l2.75 7.344l.25.656h9.593l-1.593 4H17.75c-.918-3.996-4.48-7-8.75-7zm0 8c-3.3 0-6 2.7-6 6s2.7 6 6 6s6-2.7 6-6s-2.7-6-6-6zm0 2c2.223 0 4 1.777 4 4s-1.777 4-4 4s-4-1.777-4-4s1.777-4 4-4zm0 2a1.999 1.999 0 1 0 0 4a1.999 1.999 0 1 0 0-4zm15 2c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2z"/></svg>
-                        <span>Tratores</span>
-                    </div>
+                    <a href="#">
+                        <div class="card-tire">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M7 5v7.25c-1.348.305-2.582.883-3.625 1.719l1.25 1.562A6.957 6.957 0 0 1 9 14c3.879 0 7 3.121 7 7h4.563A3.93 3.93 0 0 0 20 23c0 2.2 1.8 4 4 4s4-1.8 4-4c0-1.027-.418-1.945-1.063-2.656l2-4.969l.063-.188V13h-5v-3c0-.566.434-1 1-1V7c-1.645 0-3 1.355-3 3v3h-3.313l-2.75-7.344l-.25-.656zm2 2h5.313l2.75 7.344l.25.656h9.593l-1.593 4H17.75c-.918-3.996-4.48-7-8.75-7zm0 8c-3.3 0-6 2.7-6 6s2.7 6 6 6s6-2.7 6-6s-2.7-6-6-6zm0 2c2.223 0 4 1.777 4 4s-1.777 4-4 4s-4-1.777-4-4s1.777-4 4-4zm0 2a1.999 1.999 0 1 0 0 4a1.999 1.999 0 1 0 0-4zm15 2c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2z"/></svg>
+                            <span>Tratores</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -803,46 +686,78 @@
         <section class="rubbershop-wrapper">
             <div class="rubbershop-material page">
                 <div class="gallery-cards-rubbershop">
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/assentador-de-talao-huntec.webp" alt="Imagem de dois pneus de borracha para automoveis">
-                        <h1>Assentadores de talão</h1>
-                    </div>
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/camara-de-ar.webp" alt="Imagem de uma câmara de ar para pneus de automoveis">
-                        <h1>Câmaras de Ar</h1>
-                    </div>
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/valvulas-de-ar.webp" alt="Imagem de válvulas de ar para pneus de automoveis">
-                        <h1>Válvulas de Ar</h1>
-                    </div>
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/manchao-rac.webp" alt="Imagem de remendos de borracha para pneus de automoveis">
-                        <h1>Remendos para Pneus</h1>
-                    </div>
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/cola-vulcanizante.webp" alt="Imagem da cola utilizada no conserto de pneus de automoveis">
-                        <h1>Cola Vulcanizante</h1>
-                    </div>
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/reparo-para-pneus.webp" alt="Imagem de remendos de borracha utilizados para conserto de pneus de automoveis">
-                        <h1>Reparos para Pneus</h1>
-                    </div>
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/chave-de-rodas.webp" alt="Imagem de chaves de rodas utilizada para retirar e colocar parafusos nas rodas dos automóveis">
-                        <h1>Chaves de Rodas</h1>
-                    </div>
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/retifica-reparo-de-pneus.webp" alt="Imagem de calibrador em formato de haste utilizado para calibragem de pneus">
-                        <h1>Retificas para Reparos</h1>
-                    </div>
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/pasta-desengraxante.webp" alt="Imagem de pasta utilizada para limpar as mãos quando estão sujas de graxa">
-                        <h1>Pasta Desengraxante</h1>
-                    </div>
-                    <div class="cards-rubbershop">
-                        <img src="assets/cards-rubbershop/vaselina-montar-pneus.webp" alt="Imagem de pasta de vaselina utilizada para auxiliar na montagem de pneus de automoveis">
-                        <h1>Pasta para Montagem</h1>
-                    </div>
+                    <a href="https://abre.ai/assentadores-de-talao" target="_blank" title="Assentadores de talão">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/assentador-de-talao-huntec.webp" alt="Imagem de dois pneus de borracha para automoveis">
+                            <span>Assentadores de talão</span>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/camara-de-ar.webp" alt="Imagem de uma câmara de ar para pneus de automoveis">
+                            <span>Câmaras de Ar</span>
+                        </div>
+                    </a>
+                    <a href="https://abre.ai/bicos-e-valvulas" target="_blank">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/valvulas-de-ar.webp" alt="Imagem de válvulas de ar para pneus de automoveis">
+                            <span>Bicos e Válvulas</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/manchao-rac.webp" alt="Imagem de remendos de borracha para pneus de automoveis">
+                            <span>Remendos para Pneus</span>
+                        </div>
+                    </a>
+                    <a href="https://abre.ai/cola-vulcanizante" target="_blank">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/cola-vulcanizante.webp" alt="Imagem da cola utilizada no conserto de pneus de automoveis">
+                            <span>Cola Vulcanizante</span>
+                        </div>
+                    </a>
+                    <a href="https://abre.ai/reparos-pneus" target="_blank">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/reparo-para-pneus.webp" alt="Imagem de remendos de borracha utilizados para conserto de pneus de automoveis">
+                            <span>Reparos para Pneus</span>
+                        </div>
+                    </a>
+                    <a href="https://abre.ai/chaves-de-roda" target="_blank">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/chave-de-rodas.webp" alt="Imagem de chaves de rodas utilizada para retirar e colocar parafusos nas rodas dos automóveis">
+                            <span>Chaves em Geral</span>
+                        </div>
+                    </a>
+                    <a href="https://airmecchapeco.meloja.com.br/produtos/borracharias-em-geral/retificas-para-reparos?order=&term=&category_id=332116">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/retifica-reparo-de-pneus.webp" alt="Imagem de calibrador em formato de haste utilizado para calibragem de pneus">
+                            <span>Retificas para Reparos</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/pasta-desengraxante.webp" alt="Imagem de pasta utilizada para limpar as mãos quando estão sujas de graxa">
+                            <span>Pasta Desengraxante</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/protetor-de-rodagem.png" alt="Imagem de protetor de rodagem para pneus">
+                            <span>Protetor de Rodagem</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/contrapeso.png" alt="Imagem de contrapesos de chumbo utilizados para balanceamento de pneus">
+                            <span>Contrapesos</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="cards-rubbershop">
+                            <img src="assets/cards-rubbershop/vaselina-montar-pneus.webp" alt="Imagem de pasta de vaselina utilizada para auxiliar na montagem de pneus de automoveis">
+                            <span>Pasta para Montagem</span>
+                        </div>
+                    </a>
                 </div>
                 <a href="https://wa.link/6qv6gj" target="_blank" class="whats-rubbershop-wrapper">
                     <div class="whats-rubbershop-link">
@@ -927,6 +842,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/menu-categories.js"></script>
+    <script src="./js/scroll-categories.js"></script>
     <script type="module" src="index.js"></script>
 </body>
 </html>

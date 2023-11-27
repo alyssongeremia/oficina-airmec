@@ -10,6 +10,7 @@
 .products .cards {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 8px;
+    position: relative;
 }
 
 .img-product {
@@ -22,6 +23,17 @@
 
 .img-product img {
     width: 20rem;
+}
+
+.stamp {
+    font-size: 1.4rem;
+    background: #4c7198;
+    color: #f5f5f5;
+    padding: .2rem 1rem;
+    position: absolute;
+    left: 1rem;
+    z-index: 2;
+    border-radius: 4px;
 }
 
 .description-products {

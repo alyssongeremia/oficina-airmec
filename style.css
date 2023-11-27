@@ -1,6 +1,8 @@
 @import url(./styles/header.css);
 @import url(./styles/products.css);
 @import url(./styles/categories.css);
+@import url(./styles/usefull-cards.css);
+@import url(./styles/rubbershop.css);
 
 :root {
     --bg-primary: #1D3248;
@@ -11,6 +13,7 @@
     --bg-hover: #DE3C4B;
 
     --ct-black: #121214;
+    --ct-black-400: #858585;
     --ct-black-600: #585858;
     --ct-black-700: #424242;
     --ct-black-800: #2c2c2c;
@@ -52,11 +55,11 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--ct-primary);
-    border-radius: 10px;
 }
 
 .page {
-    width: 320px;
+    width: 96%;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -80,18 +83,33 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+
+    display: none;
 }
 
-.products-menu-link {
+.shop-link {
     text-decoration: none;
-    padding: 11px 14px;
+    font-size: 1.4rem;
+    padding: 1rem 1.4rem;
+    background: #1a2d41;
     color: var(--ct-secundary);
 
     font-weight: bold;
 
-    border: 1px solid var(--ct-secundary);
-    border-radius: 100px;
-    transition: all 400ms ease-in-out;
+    box-shadow: 0px 0px 2px 0px rgba(221,221,221,0.91);
+    border-radius: 8px;
+    transition: all 200ms ease-in-out;
+
+    display: flex;
+    gap: .2rem;
+}
+
+.shop-link:hover {
+    background: #17283a;
+}
+
+.shop-link .ph {
+    font-size: 1.8rem;
 }
 
 header {
@@ -162,6 +180,14 @@ nav img {
     animation: toLeft 350ms ease-in-out;
 }
 
+.menu::-webkit-scrollbar {
+    width: .8rem;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background: var(--ct-black-400);
+}
+
 .menu li {
     list-style-type: none;
     padding: 0 .4rem 0 .4rem;
@@ -170,22 +196,6 @@ nav img {
 .categories ul {
     display: flex;
     flex-direction: column;
-}
-
-.categories a {
-    text-decoration: none;
-    color: #2c2c2c;
-
-    font-size: 1.4rem;
-    padding: 1.4rem 1rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.panel a + a {
-    border-top: 1px solid #d8d8d8;
 }
 
 .links {
@@ -199,8 +209,6 @@ nav img {
 }
 
 .useful-contacts {
-    width: 100%;
-
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
@@ -270,10 +278,10 @@ dialog {
     border: none;
     width: 30rem;
     background: var(--ct-secundary);
-    border-radius: .8rem;
+    border-radius: 8px;
 
     margin: auto;
-    padding: 1.4rem;
+    padding: 1.6rem;
 
     position: absolute;
     z-index: 1000;
@@ -300,12 +308,7 @@ dialog::backdrop {
 }
 
 dialog .icon {
-    padding: .8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    cursor: pointer;
+    padding-top: .8rem;
 }
 
 .card-offer {
@@ -326,7 +329,7 @@ dialog .icon {
 }
 
 .card-offer h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--ct-black-700);
     padding-top: 1.6rem;
@@ -670,7 +673,7 @@ dialog .icon {
 
     padding: 2rem .8rem;
     margin: .4rem;
-    border-radius: .2rem;
+    border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
     scroll-snap-align: center;
@@ -706,7 +709,7 @@ dialog .icon {
     align-items: center;
     justify-content: center;
 
-    margin-top: 3.5rem;
+    margin-top: 3.2rem;
     border-radius: 1rem;
 }
 
@@ -828,33 +831,49 @@ dialog .icon {
     font-size: 1.4rem;
     font-weight: normal;
 
-    padding: 0 0 1.4rem 10rem;
+    padding-left: 10rem;
 }
 
 .tires-gallery {
     display: flex;
-    gap: 1.4rem;
+    gap: 1rem;
 
     padding-left: 10rem;
     overflow: auto hidden;
     scroll-snap-type: x mandatory;
 }
 
+.tires-gallery a {
+    text-decoration: none;
+    max-height: 5rem;
+    background: var(--bg-secundary);
+    color: var(--ct-black);
+    padding: 1rem .8rem;
+
+    border-radius: 8px;
+
+    scroll-snap-align: end;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    transition: all 200ms ease-out;
+}
+
+.tires-gallery a:hover {
+    transform: translateX(3px);
+}
+
 .tires-gallery::-webkit-scrollbar {
     display: none;
 }
 
-.card-tire {
-    background: var(--bg-secundary);
+.tires-gallery .ph {
+    font-size: 3.2rem;
+}
 
-    padding: 0 1.2rem;
-    border-radius: .5rem;
+.card-tire {
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: space-around;
-
-    scroll-snap-align: end;
+    justify-content: space-between;
 }
 
 .info-card-rubber {
@@ -883,20 +902,23 @@ dialog .icon {
 }
 
 .gallery-cards-rubbershop {
-    display: flex;
-    gap: 1.6rem;
-
-    overflow-x: auto;
-
-    scroll-snap-type: x mandatory;
+    display: grid;
+    grid-template-areas: "A B";
+    grid-column-gap: .8rem;
+    grid-row-gap: 1.6rem;
 }
 
 .gallery-cards-rubbershop::-webkit-scrollbar {
     display: none;
 }
 
+.gallery-cards-rubbershop a {
+    text-decoration: none;
+}
+
 .cards-rubbershop {
     width: 100%;
+    height: 100%;
     background: var(--ct-secundary);
 
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
@@ -906,16 +928,22 @@ dialog .icon {
     justify-content: space-between;
     align-items: center;
 
-    border-radius: .5rem;
+    border-radius: 8px;
     scroll-snap-align: center;
+    transition: all 200ms ease-out;
+}
+
+.cards-rubbershop:hover {
+    transform: translateY(-3px);
 }
 
 .cards-rubbershop img {
-    width: 19rem;
+    width: 12rem;
 }
 
-.cards-rubbershop h1 {
-    font-size: 1.5rem;
+.cards-rubbershop span {
+    max-width: 16rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--ct-black-700);
     text-align: center;
@@ -956,7 +984,7 @@ picture img {
     justify-content: center;
 
     margin: 4.5rem auto 0;
-    border-radius: .5rem;
+    border-radius: 8px;
 
     transition: all 200ms ease-in-out;
 }
@@ -1096,7 +1124,7 @@ footer h1:nth-child(1) {
     align-items: center;
 
     background: #0F1924;
-    border-radius: 3px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -1179,60 +1207,19 @@ footer h1:nth-child(1) {
     }
 }
 
-@media(min-width: 320px) {
-    .page {
-        width: 300px;
-    }
-}
-
-@media(min-width: 375px) {
-    .page {
-        width: 360px;
-    }
-}
-
-@media(min-width: 390px) {
-    .page {
-        width: 378px;
-    }
-}
-
-@media(min-width: 414px) {
-    .page {
-        width: 390px;
-    }
-}
-
 @media(min-width: 425px) {
-    .page {
-        min-width: 400px;
-    }
-
     .img-about-wrapper {
         text-align: center;
     }
 }
 
 @media(min-width: 460px) {
-    .page {
-        width: 420px;
-    }
-
     .cards-gallery-wrapper {
         width: 95%;
     }
 }
 
-@media(min-width: 520px) {
-    .page {
-        width: 500px;
-    }
-}
-
 @media(min-width: 700px) {
-    .page {
-        width: 670px;
-    }
 
     #sub-header {
         display: none;
@@ -1281,7 +1268,7 @@ footer h1:nth-child(1) {
     }
 
     dialog {
-        top: 17%;
+        top: -10%;
         width: 40rem;
     }
 
@@ -1383,47 +1370,37 @@ footer h1:nth-child(1) {
     .card-contacts div {
         gap: .8rem;
     }
-}
 
+    .gallery-cards-rubbershop {
+        grid-template-areas: "A B C D";
+        justify-content: space-between;
+    }
 
-@media(min-width: 920px) {
-    .page {
-        width: 880px;
+    .cards-rubbershop {
+        min-width: 16rem;
     }
 }
 
 @media(min-width: 1024px) {
-    .page {
-        width: 924px;
-    }
 
     .tires-wrapper img {
         left: 2.4rem;
     }
 
     .tires-container h1 {
-        padding: 0 0 1.4rem 13rem
+        font-size: 1.6rem;
+        padding-left: 13rem;
     }
 
     .tires-gallery {
         padding-left: 13rem;
     }
-
 }
 
 @media(min-width: 1100px) {
-    .page {
-        width: 1024px;
-    }
 
     .menu-desktop {
         gap: 5rem;
-    }
-
-    .products-menu-link:hover {
-        background: var(--bg-secundary);
-        color: var(--bg-primary);
-        border: 1px solid var(--bg-primary);
     }
 
     .menu-contact {
@@ -1506,8 +1483,11 @@ footer h1:nth-child(1) {
     }
 
     .gallery-cards-rubbershop {
-        display: grid;
-        grid-template-areas: "A B C D E" "F G H I J";
+        grid-template-areas: "A B C D E F";
+    }
+
+    .cards-rubbershop {
+        max-width: 16rem;
     }
 
     .whats-rubbershop-link {
